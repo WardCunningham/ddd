@@ -1,0 +1,159 @@
+{
+  "title": "Original License Details",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "3df025a0d28923ef",
+      "text": "This site was initially populated with text drawn from Creative Commons licensed material. "
+    },
+    {
+      "type": "paragraph",
+      "id": "d0b76b491a9d8f72",
+      "text": "That document was distributed under the Creative Commons Deed: Attribution 2.0. "
+    },
+    {
+      "type": "paragraph",
+      "id": "ebdda6bf2f2cd65f",
+      "text": "You are free: \n<li> to copy, distribute, display, and perform the work \n<li> to make derivative works \n<li> to make commercial use of the work \n"
+    },
+    {
+      "type": "paragraph",
+      "id": "b862cca1b2000597",
+      "text": "Under the following conditions: Attribution\nYou must give the original author credit with the following attribution: \n"
+    },
+    {
+      "type": "paragraph",
+      "id": "4a6a572c1cec47d7",
+      "text": "\n<b>Eric Evans, DOMAIN-DRIVEN DESIGN, Addison-Wesley, © Eric Evans, 2004.</b>\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "5b6e3c2e2b2ae8fe",
+      "text": "\nFor any reuse or distribution, you must make clear to others the license terms of this work. Any of these conditions can be waived if you get permission from the copyright holder. For the full text of the license, see the following web sites: \n\n[http://creativecommons.org/licenses/by/2.0/ License] or \n[http://creativecommons.org/licenses/by/2.0/legalcode  legal code].\n"
+    }
+  ],
+  "journal": [
+    {
+      "type": "edit",
+      "id": "b862cca1b2000597",
+      "item": {
+        "type": "paragraph",
+        "id": "b862cca1b2000597",
+        "text": "Under the following conditions: Attribution\nYou must give the original author credit with the following attribution: \n"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4a6a572c1cec47d7"
+      },
+      "id": "4a6a572c1cec47d7",
+      "type": "add",
+      "after": "b862cca1b2000597"
+    },
+    {
+      "type": "edit",
+      "id": "4a6a572c1cec47d7",
+      "item": {
+        "type": "paragraph",
+        "id": "4a6a572c1cec47d7",
+        "text": "\n<b>Eric Evans, DOMAIN-DRIVEN DESIGN, Addison-Wesley, © Eric Evans, 2004.</b>\n"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5b6e3c2e2b2ae8fe"
+      },
+      "id": "5b6e3c2e2b2ae8fe",
+      "type": "add",
+      "after": "4a6a572c1cec47d7"
+    },
+    {
+      "type": "edit",
+      "id": "5b6e3c2e2b2ae8fe",
+      "item": {
+        "type": "paragraph",
+        "id": "5b6e3c2e2b2ae8fe",
+        "text": "\nFor any reuse or distribution, you must make clear to others the license terms of this work. Any of these conditions can be waived if you get permission from the copyright holder. For the full text of the license, see the following web sites: \n\n[http://creativecommons.org/licenses/by/2.0/ License] or \n[http://creativecommons.org/licenses/by/2.0/legalcode  legal code].\n"
+      }
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "ebdda6bf2f2cd65f",
+        "text": "You are free: \n<li> to copy, distribute, display, and perform the work \n<li> to make derivative works \n<li> to make commercial use of the work \n"
+      },
+      "id": "ebdda6bf2f2cd65f"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3df025a0d28923ef"
+      },
+      "id": "3df025a0d28923ef",
+      "type": "add",
+      "after": "5b6e3c2e2b2ae8fe"
+    },
+    {
+      "type": "move",
+      "order": [
+        "3df025a0d28923ef",
+        "ebdda6bf2f2cd65f",
+        "b862cca1b2000597",
+        "4a6a572c1cec47d7",
+        "5b6e3c2e2b2ae8fe"
+      ],
+      "id": "3df025a0d28923ef"
+    },
+    {
+      "type": "edit",
+      "id": "3df025a0d28923ef",
+      "item": {
+        "type": "paragraph",
+        "id": "3df025a0d28923ef",
+        "text": "This site was initially populated with text drawn from Creative Commons licensed material. "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d0b76b491a9d8f72"
+      },
+      "id": "d0b76b491a9d8f72",
+      "type": "add",
+      "after": "5b6e3c2e2b2ae8fe"
+    },
+    {
+      "type": "edit",
+      "id": "d0b76b491a9d8f72",
+      "item": {
+        "type": "paragraph",
+        "id": "d0b76b491a9d8f72",
+        "text": "This document is distributed  under the Creative Commons Deed: Attribution 2.0. "
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "3df025a0d28923ef",
+        "d0b76b491a9d8f72",
+        "ebdda6bf2f2cd65f",
+        "b862cca1b2000597",
+        "4a6a572c1cec47d7",
+        "5b6e3c2e2b2ae8fe"
+      ],
+      "id": "d0b76b491a9d8f72"
+    },
+    {
+      "type": "edit",
+      "id": "d0b76b491a9d8f72",
+      "item": {
+        "type": "paragraph",
+        "id": "d0b76b491a9d8f72",
+        "text": "That document was distributed under the Creative Commons Deed: Attribution 2.0. "
+      }
+    }
+  ]
+}

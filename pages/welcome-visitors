@@ -2,14 +2,29 @@
   "title": "Welcome Visitors",
   "story": [
     {
-      "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already, most likely among the [[List of Pioneers]].",
+      "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]].",
       "id": "7b56f22a4b9ee974",
       "type": "paragraph"
     },
     {
       "type": "paragraph",
       "id": "8c8a4be5dde9ccad",
-      "text": "This is Eric Evans' [[Domain Driven Design]] pattern language."
+      "text": "This instance of federated wiki is devoted to sharing and building upon the [[Domain Driven Design]] pattern language contained within."
+    },
+    {
+      "type": "paragraph",
+      "id": "302ba187a4bc82f9",
+      "text": "<h3>Source Material"
+    },
+    {
+      "type": "paragraph",
+      "id": "b45e5d9b9e1deba6",
+      "text": "This site has been populated with extracts from <i>Domain-Driven Design: Tackling Complexity in the Heart of Software</i>, by Eric Evans, Addison-Wesley 2004."
+    },
+    {
+      "type": "paragraph",
+      "id": "d25dc1c201ca097f",
+      "text": "See [[Original License Details]].\n"
     }
   ],
   "journal": [
@@ -47,6 +62,164 @@
         "type": "paragraph",
         "id": "8c8a4be5dde9ccad",
         "text": "This is Eric Evans' [[Domain Driven Design]] pattern language."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "7b56f22a4b9ee974",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]].",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "8c8a4be5dde9ccad",
+      "item": {
+        "type": "paragraph",
+        "id": "8c8a4be5dde9ccad",
+        "text": "This is devoted to sharing and building upon Eric Evans' [[Domain Driven Design]] pattern language."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b45e5d9b9e1deba6"
+      },
+      "id": "b45e5d9b9e1deba6",
+      "type": "add",
+      "after": "8c8a4be5dde9ccad"
+    },
+    {
+      "type": "edit",
+      "id": "b45e5d9b9e1deba6",
+      "item": {
+        "type": "paragraph",
+        "id": "b45e5d9b9e1deba6",
+        "text": "Excerpted  from Domain-Driven Design: Tackling Complexity in the Heart of Software, by Eric Evans, Addison-Wesley 2004."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "302ba187a4bc82f9"
+      },
+      "id": "302ba187a4bc82f9",
+      "type": "add",
+      "after": "b45e5d9b9e1deba6"
+    },
+    {
+      "type": "edit",
+      "id": "302ba187a4bc82f9",
+      "item": {
+        "type": "paragraph",
+        "id": "302ba187a4bc82f9",
+        "text": "<h3>Source Material"
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "8c8a4be5dde9ccad",
+        "302ba187a4bc82f9",
+        "b45e5d9b9e1deba6"
+      ],
+      "id": "302ba187a4bc82f9"
+    },
+    {
+      "type": "edit",
+      "id": "8c8a4be5dde9ccad",
+      "item": {
+        "type": "paragraph",
+        "id": "8c8a4be5dde9ccad",
+        "text": "This is devoted to sharing and building upon the [[Domain Driven Design]] pattern language contained within."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "8c8a4be5dde9ccad",
+      "item": {
+        "type": "paragraph",
+        "id": "8c8a4be5dde9ccad",
+        "text": "This instance of federated wiki is devoted to sharing and building upon the [[Domain Driven Design]] pattern language contained within."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d25dc1c201ca097f"
+      },
+      "id": "d25dc1c201ca097f",
+      "type": "add",
+      "after": "b45e5d9b9e1deba6"
+    },
+    {
+      "type": "edit",
+      "id": "d25dc1c201ca097f",
+      "item": {
+        "type": "paragraph",
+        "id": "d25dc1c201ca097f",
+        "text": "This document is distributed  under the Creative Commons Deed: Attribution 2.0.\n\nYou are free: \n<li> to copy, distribute, display, and perform the work \n<li> to make derivative works \n<li> to make commercial use of the work \n\nUnder the following conditions: Attribution\nYou must give the original author credit with the following attribution: \n\n<b>Eric Evans, DOMAIN-DRIVEN DESIGN, Addison-Wesley, © Eric Evans, 2004.</b>\n\nFor any reuse or distribution, you must make clear to others the license terms of this work. \n\nAny of these conditions can be waived if you get permission from the copyright holder. \n\nFor the full text of the license, see the following web sites: \n\nhttp://creativecommons.org/licenses/by/2.0/ \nhttp://creativecommons.org/licenses/by/2.0/legalcode  \n"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "d25dc1c201ca097f",
+      "item": {
+        "type": "paragraph",
+        "id": "d25dc1c201ca097f",
+        "text": "This document is distributed  under the Creative Commons Deed: Attribution 2.0.\n"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ebdda6bf2f2cd65f"
+      },
+      "id": "ebdda6bf2f2cd65f",
+      "type": "add",
+      "after": "d25dc1c201ca097f"
+    },
+    {
+      "type": "edit",
+      "id": "ebdda6bf2f2cd65f",
+      "item": {
+        "type": "paragraph",
+        "id": "ebdda6bf2f2cd65f",
+        "text": "You are free: \n<li> to copy, distribute, display, and perform the work \n<li> to make derivative works \n<li> to make commercial use of the work \n"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "d25dc1c201ca097f",
+      "item": {
+        "type": "paragraph",
+        "id": "d25dc1c201ca097f",
+        "text": "This document is distributed  under the Creative Commons Deed: Attribution 2.0. See [[Original License Details]].\n"
+      }
+    },
+    {
+      "type": "remove",
+      "id": "ebdda6bf2f2cd65f"
+    },
+    {
+      "type": "edit",
+      "id": "d25dc1c201ca097f",
+      "item": {
+        "type": "paragraph",
+        "id": "d25dc1c201ca097f",
+        "text": "See [[Original License Details]].\n"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "b45e5d9b9e1deba6",
+      "item": {
+        "type": "paragraph",
+        "id": "b45e5d9b9e1deba6",
+        "text": "This site has been populated with extracts from <i>Domain-Driven Design: Tackling Complexity in the Heart of Software</i>, by Eric Evans, Addison-Wesley 2004."
       }
     }
   ],
