@@ -3,57 +3,57 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "1989985629142612",
+      "id": "9131280708091384",
       "text": "A domain vision statement identifies the core domain in broad terms, but it leaves the identification of the specific core model elements up to the vagaries of individual interpretation. Unless there is an exceptionally high level of communication on the team, the vision statement alone will have little impact."
     }
 ,    {
       "type": "paragraph",
-      "id": "0247266921243263",
+      "id": "7384828608392890",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "8648481344524248",
+      "id": "6773803008828925",
       "text": "Even though team members may know broadly what constitutes the core domain, different people won't pick out quite the same elements, and even the same person won't be consistent from one day to the next. The mental labor of constantly filtering the model to identify the key parts absorbs concentration better spent on design thinking, and it requires comprehensive knowledge of the model. The core domain must be made easier to see."
     }
 ,    {
       "type": "paragraph",
-      "id": "0110985557096355",
+      "id": "9054147436482004",
       "text": "Significant structural changes to the code are the ideal way of identifying the core domain, but they are not always practical in the short term. In fact, such major code changes are difficult to undertake without the very view the team is lacking."
     }
 ,    {
       "type": "paragraph",
-      "id": "5462719161857720",
+      "id": "9887642903908791",
       "text": "Therefore (as one form of highlighted core):"
     }
 ,    {
       "type": "paragraph",
-      "id": "3948742018095179",
+      "id": "0706477310371575",
       "text": "Write a very brief document (three to seven sparse pages) that describes the core domain and the primary interactions among core elements."
     }
 ,    {
       "type": "paragraph",
-      "id": "8692752024674386",
+      "id": "3330647089316718",
       "text": "Therefore (as another form of highlighted core):"
     }
 ,    {
       "type": "paragraph",
-      "id": "2916835365910830",
+      "id": "6618005382645327",
       "text": "Flag the elements of the core domain within the primary repository of the model, without particularly trying to elucidate its role. Make it effortless for a developer to know what is in or out of the core."
     }
 ,    {
       "type": "paragraph",
-      "id": "6771359636598886",
+      "id": "0037929750831426",
       "text": "As a corollary and process opportunity:"
     }
 ,    {
       "type": "paragraph",
-      "id": "8975710122948443",
+      "id": "7470871316340263",
       "text": "If the distillation document outlines the essentials of the core domain, then it serves as a practical indicator of the significance of a model change. When a model or code change affects the distillation document, it requires consultation with other team members. When the change is made, it requires immediate notification of all team members, and the dissemination of a new version of the document. Changes outside the core or to details not included in the distillation document can be integrated without consultation or notification and will be encountered by other members in the course of their work. Then the developers have the full autonomy that XP suggests."
     }
 ,    {
       "type": "paragraph",
-      "id": "9196658526555439",
+      "id": "2824639301301241",
       "text": "* * *"
     }
 

@@ -3,22 +3,22 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "0945705933962058",
+      "id": "5169669655132579",
       "text": "When the side effects of operations are only defined implicitly by their implementation, designs with a lot of delegation become a tangle of cause and effect. The only way to understand a program is to trace execution through branching paths. The value of encapsulation is lost. The necessity of tracing concrete execution defeats abstraction."
     }
 ,    {
       "type": "paragraph",
-      "id": "0992996494430298",
+      "id": "0942224877540555",
       "text": "Therefore,"
     }
 ,    {
       "type": "paragraph",
-      "id": "4984011068419960",
+      "id": "3701160342800886",
       "text": "State post-conditions of operations and invariants of classes and aggregates. If assertions cannot be coded directly in your programming language, write automated unit tests for them. Write them into documentation or diagrams where it fits the style of the project's development process."
     }
 ,    {
       "type": "paragraph",
-      "id": "1915467852486731",
+      "id": "5579266360075020",
       "text": "Seek models with coherent sets of concepts, which lead a developer to infer the intended assertions, accelerating the learning curve and reducing the risk of contradictory code."
     }
 

@@ -3,27 +3,27 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "3051415387649795",
+      "id": "6300041165951919",
       "text": "Opportunities arise in a very mature model that is deep and distilled. A pluggable component framework usually only comes into play after a few applications have already been implemented in the same domain."
     }
 ,    {
       "type": "paragraph",
-      "id": "2415485476799850",
+      "id": "7464150184383062",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "8285830817725933",
+      "id": "6375833531281585",
       "text": "When a variety of applications have to interoperate, all based on the same abstractions but designed independently, translations between multiple bounded contexts limit integration. A shared kernel is not feasible for teams that do not work closely together. Duplication and fragmentation raise costs of development and installation, and interoperability becomes very difficult."
     }
 ,    {
       "type": "paragraph",
-      "id": "2351164815650049",
+      "id": "9044111092634742",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "6411577645160807",
+      "id": "0886636382415317",
       "text": "Distill an abstract core of interfaces and interactions and create a framework that allows diverse implementations of those interfaces to be freely substituted. Likewise, allow any application to use those components, so long as it operates strictly through the interfaces of the abstract core."
     }
 

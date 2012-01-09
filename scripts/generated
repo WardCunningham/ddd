@@ -1,13 +1,13 @@
-unknown-pattern
 ubiquitous-language
 model-driven-design
 hands-on-modelers
-building-blocks-of-a-model-driven-design
 layered-architecture
-entities-aka-reference-objects
+reference-objects
+entities
 value-objects
 services
-modules-aka-packages
+packages
+modules
 aggregates
 factories
 repositories

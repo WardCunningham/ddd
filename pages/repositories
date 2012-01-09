@@ -3,27 +3,27 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "7945432126255867",
+      "id": "6499487003817874",
       "text": "A client needs a practical means of acquiring references to preexisting domain objects. If the infrastructure makes it easy to do so, the developers of the client may add more traversable associations, muddling the model. On the other hand, they may use queries to pull the exact data they need from the database, or to pull a few specific objects rather than navigating from aggregate roots. Domain logic moves into queries and client code, and the entities and value objects become mere data containers. The sheer technical complexity of applying most database access infrastructure quickly swamps the client code, which leads developers to dumb-down the domain layer, which makes the model irrelevant."
     }
 ,    {
       "type": "paragraph",
-      "id": "5259032292083389",
+      "id": "3026251114755236",
       "text": "Restating the problem:"
     }
 ,    {
       "type": "paragraph",
-      "id": "6701659333090537",
+      "id": "3488442745360284",
       "text": "A subset of persistent objects must be globally accessible through a search based on object attributes. Such access is needed for the roots of aggregates that are not convenient to reach by traversal. They are usually entities, sometimes value objects with complex internal structure, and sometimes enumerated values. Providing access to other objects muddies important distinctions. Free database queries can actually breach the encapsulation of domain objects and aggregates. Exposure of technical infrastructure and database access mechanisms complicates the client and obscures the model-driven design."
     }
 ,    {
       "type": "paragraph",
-      "id": "0548245441195660",
+      "id": "7912025878744472",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "1123606693320910",
+      "id": "7121764921451552",
       "text": "For each type of object that needs global access, create an object that can provide the illusion of an in-memory collection of all objects of that type. Set up access through a well-known global interface. Provide methods to add and remove objects, which will encapsulate the actual insertion or removal of data in the data store. Provide methods that select objects based on some criteria and return fully instantiated objects or collections of objects whose attribute values meet the criteria, thereby encapsulating the actual storage and query technology. Provide repositories only for aggregate roots that actually need direct access. Keep the client focused on the model, delegating all object storage and access to the repositories."
     }
 

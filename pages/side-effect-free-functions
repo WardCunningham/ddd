@@ -3,17 +3,17 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "5264017398140707",
+      "id": "2817355210417112",
       "text": "Interactions of multiple rules or compositions of calculations become extremely difficult to predict. The developer calling an operation must understand its implementation and the implementation of all its delegations in order to anticipate the result. The usefulness of any abstraction of interfaces is limited if the developers are forced to pierce the veil. Without safely predictable abstractions, the developers must limit the combinatory explosion, placing a low ceiling on the richness of behavior that is feasible to build."
     }
 ,    {
       "type": "paragraph",
-      "id": "4692659162270141",
+      "id": "8674114905062093",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "8865470036020428",
+      "id": "4718632224620393",
       "text": "Place as much of the logic of the program as possible into functions, operations that return results with no observable side effects. Strictly segregate commands (methods which result in modifications to observable state) into very simple operations that do not return domain information. Further control side effects by moving complex logic into value objects when a concept fitting the responsibility presents itself."
     }
 

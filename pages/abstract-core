@@ -2,38 +2,39 @@
           "title": "Abstract Core",
           "story": [
                 {
-      "type": "paragraph",
-      "id": "4697262819394324",
-      "text": " <img border=0 width=141 height=143 src=\"files/image020.gif\" v:shapes=\"_x0000_i1034\">"
+      "type": "image",
+      "id": "4122398089691772",
+      "url": "data:image/gif;base64,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",
+      "caption": "files/image020.gif"
     }
 ,    {
       "type": "paragraph",
-      "id": "6400331048570070",
+      "id": "9034073858067260",
       "text": "Even the core domain model usually has so much detail that communicating the big picture can be difficult."
     }
 ,    {
       "type": "paragraph",
-      "id": "9513755367994378",
+      "id": "6524210191676825",
       "text": "When there is a lot of interaction between subdomains in separate modules, either many references will have to be created between modules, which defeats much of the value of the partitioning, or the interaction will have to be made indirect, which makes the model obscure."
     }
 ,    {
       "type": "paragraph",
-      "id": "1122630024153554",
+      "id": "3008049973421588",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "8931127016205139",
+      "id": "1036042347938389",
       "text": "Identify the most fundamental concepts in the model and factor them into distinct classes, abstract classes, or interfaces. Design this abstract model so that it expresses most of the interaction between significant components. Place this abstract overall model in its own module, while the specialized, detailed implementation classes are left in their own modules defined by subdomain."
     }
 ,    {
       "type": "paragraph",
-      "id": "5380813796829568",
+      "id": "1624227881733032",
       "text": "In a large system without any overarching principle that allows elements to be interpreted in terms of their role in patterns that span the whole design, <i>developers cannot see the forest for the trees.</i> We need to be able to understand the role of an individual part in the whole without delving into the details of the whole."
     }
 ,    {
       "type": "paragraph",
-      "id": "7112546337531674",
+      "id": "2958890025076151",
       "text": "Devise a pattern of rules or roles and relationships that will span the entire system and that allows some understanding of each part's place in the whole&#8212;even without detailed knowledge of the part's responsibility."
     }
 

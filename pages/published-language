@@ -3,37 +3,37 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "7665012996752061",
+      "id": "6739838181634124",
       "text": "The translation between the models of two bounded contexts requires a common language."
     }
 ,    {
       "type": "paragraph",
-      "id": "9638584943398115",
+      "id": "8383524780267512",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "9322272722402371",
+      "id": "9860298027390800",
       "text": "Direct translation to and from the existing domain models may not be a good solution. Those models may be overly complex or poorly factored. They are probably undocumented. If one is used as a data interchange language, it essentially becomes frozen and cannot respond to new development needs."
     }
 ,    {
       "type": "paragraph",
-      "id": "4161768409561597",
+      "id": "1710113148647121",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "4232471962349784",
+      "id": "0219469442068040",
       "text": "Use a well-documented shared language that can express the necessary domain information as a common medium of communication, translating as necessary into and out of that language."
     }
 ,    {
       "type": "paragraph",
-      "id": "6698512743062798",
+      "id": "4057102157573694",
       "text": "How do you focus on your central problem and keep from drowning in a sea of side issues?"
     }
 ,    {
       "type": "paragraph",
-      "id": "1811429987284806",
+      "id": "5225657181868183",
       "text": "<i>Distillation</i> is the process of separating the components of a mixture to extract the essence in a form that makes it more valuable and useful. A model is a distillation of knowledge. With every refactoring to deeper insight, we abstract some crucial aspect of domain knowledge and priorities. Now, stepping back for a strategic view, this chapter looks at ways to distinguish broad swaths of the model and distill the domain model as a whole."
     }
 

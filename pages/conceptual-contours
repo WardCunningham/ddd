@@ -3,32 +3,32 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "6724845496596891",
+      "id": "3223069347536555",
       "text": "Sometimes people chop functionality fine to allow flexible combination. Sometimes they lump it large to encapsulate complexity. Sometimes they seek a consistent granularity, making all classes and operations to a similar scale. These are oversimplifications that don't work well as general rules. But they are motivated by a basic set of problems."
     }
 ,    {
       "type": "paragraph",
-      "id": "7143274041460216",
+      "id": "6120996515587800",
       "text": "When elements of a model or design are embedded in a monolithic construct, their functionality gets duplicated. The external interface doesn't say everything a client might care about. Their meaning is hard to understand, because different concepts are mixed together."
     }
 ,    {
       "type": "paragraph",
-      "id": "1311360231967457",
+      "id": "4090179573774072",
       "text": "On the other hand, breaking down classes and methods can pointlessly complicate the client, forcing client objects to understand how tiny pieces fit together. Worse, a concept can be lost completely. Half of a uranium atom is not uranium. And of course, it isn't just grain size that counts, but just where the grain runs."
     }
 ,    {
       "type": "paragraph",
-      "id": "0852850820177465",
+      "id": "6992213573477209",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "1253653431056259",
+      "id": "4178677335422529",
       "text": "Decompose design elements (operations, interfaces, classes, and aggregates) into cohesive units, taking into consideration your intuition of the important divisions in the domain. Observe the axes of change and stability through successive refactorings and look for the underlying conceptual contours that explain these shearing patterns. Align the model with the consistent aspects of the domain that make it a viable area of knowledge in the first place."
     }
 ,    {
       "type": "paragraph",
-      "id": "7559218057608815",
+      "id": "2708656351139958",
       "text": "A supple design based on a deep model yields a simple set of interfaces that combine logically to make sensible statements in the ubiquitous language, and without the distraction and maintenance burden of irrelevant options."
     }
 

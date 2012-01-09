@@ -3,22 +3,22 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "2468379256486949",
+      "id": "8279781689938192",
       "text": "When creation of an object, or an entire aggregate, becomes complicated or reveals too much of the internal structure, factories provide encapsulation."
     }
 ,    {
       "type": "paragraph",
-      "id": "7269691115487930",
+      "id": "8680641448597217",
       "text": "Creation of an object can be a major operation in itself, but complex assembly operations do not fit the responsibility of the created objects. Combining such responsibilities can produce ungainly designs that are hard to understand. Making the client direct construction muddies the design of the client, breaches encapsulation of the assembled object or aggregate, and overly couples the client to the implementation of the created object."
     }
 ,    {
       "type": "paragraph",
-      "id": "4281256229309367",
+      "id": "6924523147980068",
       "text": "Therefore,"
     }
 ,    {
       "type": "paragraph",
-      "id": "3490989543220370",
+      "id": "6195610054934549",
       "text": "Shift the responsibility for creating instances of complex objects and aggregates to a separate object, which may itself have no responsibility in the domain model but is still part of the domain design. Provide an interface that encapsulates all complex assembly and that does not require the client to reference the concrete classes of the objects being instantiated. Create entire aggregates as a piece, enforcing their invariants."
     }
 

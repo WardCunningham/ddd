@@ -3,27 +3,27 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "8284683817340154",
+      "id": "0276246864189812",
       "text": "Computations sometimes reach a level of complexity that begins to bloat the design. The conceptual \"what\" is swamped by the mechanistic \"how.\" A large number of methods that provide algorithms for resolving the problem obscure the methods that express the problem."
     }
 ,    {
       "type": "paragraph",
-      "id": "9265979486499059",
+      "id": "9555039663883921",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "7033668672201517",
+      "id": "8590221822781928",
       "text": "Partition a conceptually cohesive mechanism into a separate lightweight framework. Particularly watch for formalisms or well-documented categories of algorithms. Expose the capabilities of the framework with an intention-revealing interface. Now the other elements of the domain can focus on expressing the problem (\"what\"), delegating the intricacies of the solution (\"how\") to the framework."
     }
 ,    {
       "type": "paragraph",
-      "id": "1953741557174633",
+      "id": "7316427045766412",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "6936771239140521",
+      "id": "9079342074902004",
       "text": "Factoring out generic subdomains reduces clutter, and cohesive mechanisms serve to encapsulate complex operations. This leaves behind a more focused model, with fewer distractions that add no particular value to the way users conduct their activities. But you are unlikely ever to find good homes for everything in the domain model that is not core. The segregated core takes a direct approach to structurally marking off the core domain. . . ."
     }
 

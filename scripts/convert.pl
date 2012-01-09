@@ -1,4 +1,6 @@
 use strict;
+use MIME::Base64;
+
 `cat generated | while read f; do rm ../pages/\$f; done`;
 `cat /dev/null >generated`;
 
@@ -45,24 +47,24 @@ sub paragraph {
 
 }
 
-sub node {
+sub image {
+  my ($tag) = @_;
+  return paragraph $tag unless $tag =~ /src="(.*?)\.(jpg|gif|png)"/;
+  my ($file, $type) = ("$1.$2", $2);
+  my $id = randomid();
+  my $bin = encode_base64 `cat $file`;
+  $bin =~ s/\s//g;
   return <<;
     {
-      "name": "$_[0]",
-      "group": $_[1]
+      "type": "image",
+      "id": "$id",
+      "url": "data:image/$type;base64,$bin",
+      "caption": "$file"
     }
 
 }
 
-sub linkk {
-  return <<;
-    {
-      "source": $_[0],
-      "target": $_[1],
-      "value": $_[2]
-    }
-
-}
+# scan the word generated html picking out content based on well chosen style names
 
 my (%t, %tt);
 my (@index, @pattern) = ((),());
@@ -90,9 +92,18 @@ sub scan {
     next if /^$/;
     print ++$i, " $c\n\t$_\n\n";
     if ($c =~ /PatternTitle/) {
-      page $title, @pattern;
-      push @index, paragraph "[[$title]]";
+      if (@pattern) {
+        page $1, (paragraph "See [[$title]]") if $title =~ s/ \(aka (.*?)\)//;
+        page $title, @pattern;
+        push @index, paragraph "[[$title]]";
+      }
       ($title, @pattern) = ($_, ());
+    } elsif ($c =~ /PatternIllustration/) {
+      push @pattern, image $_
+    } elsif ($c =~ /Illustration/) {
+      push @index, image $_
+    } elsif (/^<img/) {
+      push @index, image $_
     } elsif ($c =~ /Pattern/) {
       push @pattern, paragraph $_;
     } else {
@@ -102,6 +113,8 @@ sub scan {
   page $title, @pattern;
   page 'Domain Driven Design', @index;
 }
+
+# perform the conversion, report stats that help make sure we're not missing things
 
 scan();
 print "\n", map "$t{$_}\t$_\n", sort keys %t;

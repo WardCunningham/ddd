@@ -3,67 +3,67 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "8502433119870870",
+      "id": "2967493301510026",
       "text": "To create a supple, knowledge-rich design calls for a versatile, shared team language, and a lively experimentation with language that seldom happens on software projects."
     }
 ,    {
       "type": "paragraph",
-      "id": "1545224746696562",
+      "id": "4699072325622737",
       "text": "A project faces serious problems when its language is fractured. Domain experts use their jargon while technical team members have their own language tuned for discussing the domain in terms of design."
     }
 ,    {
       "type": "paragraph",
-      "id": "4009995804443667",
+      "id": "9612087360971067",
       "text": "The terminology of day-to-day discussions is disconnected from the terminology embedded in the code (ultimately the most important product of a software project). And even the same person uses different language in speech and in writing, so that the most incisive expressions of the domain often emerge in a transient form that is never captured in the code or even in writing."
     }
 ,    {
       "type": "paragraph",
-      "id": "6620894185328201",
+      "id": "4659806828421279",
       "text": "Translation blunts communication and makes knowledge crunching anemic."
     }
 ,    {
       "type": "paragraph",
-      "id": "1406264280468659",
+      "id": "6765576139961443",
       "text": "Yet none of these dialects can be a common language because none serves all needs."
     }
 ,    {
       "type": "paragraph",
-      "id": "0730204958001699",
+      "id": "8819794879230672",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "4503165936786770",
+      "id": "0562669781813763",
       "text": "Use the model as the backbone of a language. Commit the team to exercising that language relentlessly in all communication within the team and in the code. Use the same language in diagrams, writing, and especially speech."
     }
 ,    {
       "type": "paragraph",
-      "id": "5390932461043340",
+      "id": "9232922515861110",
       "text": "Iron out difficulties by experimenting with alternative expressions, which reflect alternative models. Then refactor the code, renaming classes, methods, and modules to conform to the new model. Resolve confusion over terms in conversation, in just the way we come to agree on the meaning of ordinary words."
     }
 ,    {
       "type": "paragraph",
-      "id": "6944920756977615",
+      "id": "7340860985955662",
       "text": "Recognize that a change in the language is a change to the model."
     }
 ,    {
       "type": "paragraph",
-      "id": "2806258212685739",
+      "id": "4090300186986964",
       "text": "Domain experts should object to terms or structures that are awkward or inadequate to convey domain understanding; developers should watch for ambiguity or inconsistency that will trip up design."
     }
 ,    {
       "type": "paragraph",
-      "id": "1560795995057440",
+      "id": "6765870948147371",
       "text": "With a ubiquitous language, the model is not just a design artifact. It becomes integral to everything the developers and domain experts do together."
     }
 ,    {
       "type": "paragraph",
-      "id": "0780063896484146",
+      "id": "3889422957727539",
       "text": "Also,"
     }
 ,    {
       "type": "paragraph",
-      "id": "1164462261779746",
+      "id": "2469599341593340",
       "text": "Play with the model as you talk about the system. Describe scenarios out loud using the elements and interactions of the model, combining concepts in ways allowed by the model. Find easier ways to say what you need to say, and then take those new ideas back down to the diagrams and code."
     }
 

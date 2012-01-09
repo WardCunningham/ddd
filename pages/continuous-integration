@@ -3,27 +3,27 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "0464964834447653",
+      "id": "7034892300529905",
       "text": "Once a bounded context has been defined, we must keep it sound."
     }
 ,    {
       "type": "paragraph",
-      "id": "3706337502902898",
+      "id": "3148870450774376",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "0821021045695496",
+      "id": "6694638983731476",
       "text": "When a number of people are working in the same bounded context, there is a strong tendency for the model to fragment. The bigger the team, the bigger the problem, but as few as three or four people can encounter serious problems. Yet breaking down the system into ever-smaller contexts eventually loses a valuable level of integration and coherency."
     }
 ,    {
       "type": "paragraph",
-      "id": "7084436642745666",
+      "id": "0237133666054383",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "3270686355576122",
+      "id": "1106710002603537",
       "text": "Institute a process of merging all code and other implementation artifacts frequently, with automated tests to flag fragmentation quickly. Relentlessly exercise the ubiquitous language to hammer out a shared view of the model as the concepts evolve in different people's heads."
     }
 

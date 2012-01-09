@@ -1,29 +1,29 @@
         {
-          "title": "Modules (aka Packages)",
+          "title": "Modules",
           "story": [
                 {
       "type": "paragraph",
-      "id": "7612716086222135",
+      "id": "5309577581302310",
       "text": "Everyone uses modules, but few treat them as a full-fledged part of the model. Code gets broken down into all sorts of categories, from aspects of the technical architecture to developers' work assignments. Even developers who refactor a lot tend to content themselves with modules conceived early in the project."
     }
 ,    {
       "type": "paragraph",
-      "id": "7521830294379860",
+      "id": "5102248618994423",
       "text": "It is a truism that there should be low coupling between modules and high cohesion within them. Explanations of coupling and cohesion tend to make them sound like technical metrics, to be judged mechanically based on the distributions of associations and interactions. Yet it isn't just code being divided into modules, but concepts. There is a limit to how many things a person can think about at once (hence low coupling). Incoherent fragments of ideas are as hard to understand as an undifferentiated soup of ideas (hence high cohesion)."
     }
 ,    {
       "type": "paragraph",
-      "id": "7232465092340876",
+      "id": "3337209102449023",
       "text": "Therefore,"
     }
 ,    {
       "type": "paragraph",
-      "id": "4440846540741732",
+      "id": "7365851438455165",
       "text": "Choose modules that tell the story of the system and contain a cohesive set of concepts. This often yields low coupling between modules, but if it doesn't look for a way to change the model to disentangle the concepts, or an overlooked concept that might be the basis of a module that would bring the elements together in a meaningful way. Seek low coupling in the sense of concepts that can be understood and reasoned about independently of each other. Refine the model until it partitions according to high-level domain concepts and the corresponding code is decoupled as well."
     }
 ,    {
       "type": "paragraph",
-      "id": "1763253986362882",
+      "id": "5501399923996316",
       "text": "Give the modules names that become part of the ubiquitous language. modules and their names should reflect insight into the domain."
     }
 
