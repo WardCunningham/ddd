@@ -1,0 +1,31 @@
+        {
+          "title": "Separate Ways",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "5644927016136966",
+      "text": "We must be ruthless when it comes to defining requirements. If two sets of functionality have no significant relationship, they can be completely cut loose from each other."
+    }
+,    {
+      "type": "paragraph",
+      "id": "1698666581608598",
+      "text": "* * *"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5795816291070495",
+      "text": "Integration is always expensive, and sometimes the benefit is small."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5898085028580325",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7888802927976587",
+      "text": "Declare a bounded context to have no connection to the others at all, allowing developers to find simple, specialized solutions within this small scope."
+    }
+
+          ]
+        }

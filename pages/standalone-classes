@@ -1,0 +1,16 @@
+        {
+          "title": "Standalone Classes",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "9566428908001300",
+      "text": "Even within a module, the difficulty of interpreting a design increases wildly as dependencies are added. This adds to mental overload, limiting the design complexity a developer can handle. Implicit concepts contribute to this load even more than explicit references."
+    }
+,    {
+      "type": "paragraph",
+      "id": "3011463760672496",
+      "text": "Low coupling is fundamental to object design. When you can, go all the way. Eliminate <em>all</em> other concepts from the picture. Then the class will be completely self-contained and can be studied and understood alone. Every such self-contained class significantly eases the burden of understanding a module."
+    }
+
+          ]
+        }

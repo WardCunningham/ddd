@@ -1,0 +1,36 @@
+        {
+          "title": "Layered Architecture",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "7201387105254326",
+      "text": " <img border=0 width=411 height=298 src=\"files/image002.gif\" v:shapes=\"_x0000_i1025\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5407799961121198",
+      "text": " <img border=0 width=239 height=278 src=\"files/image004.gif\" v:shapes=\"_x0000_i1026\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6789643459351923",
+      "text": "In an object-oriented program, UI, database, and other support code often gets written directly into the business objects. Additional business logic is embedded in the behavior of UI widgets and database scripts. This happens because it is the easiest way to make things work, in the short run."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7117400523601381",
+      "text": "When the domain-related code is diffused through such a large amount of other code, it becomes extremely difficult to see and to reason about. Superficial changes to the UI can actually change business logic. To change a business rule may require meticulous tracing of UI code, database code, or other program elements. Implementing coherent, model-driven objects becomes impractical. Automated testing is awkward. With all the technologies and logic involved in each activity, a program must be kept very simple or it becomes impossible to understand."
+    }
+,    {
+      "type": "paragraph",
+      "id": "8494095974556446",
+      "text": "Therefore,"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2004780500208313",
+      "text": "Partition a complex program into layers. Develop a design within each layer that is cohesive and that depends only on the layers below. Follow standard architectural patterns to provide loose coupling to the layers above. Concentrate all the code related to the domain model in one layer and isolate it from the user interface, application, and infrastructure code. The domain objects, free of the responsibility of displaying themselves, storing themselves, managing application tasks, and so forth, can be focused on expressing the domain model. This allows a model to evolve to be rich enough and clear enough to capture essential business knowledge and put it to work."
+    }
+
+          ]
+        }

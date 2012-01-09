@@ -1,0 +1,401 @@
+        {
+          "title": "Domain Driven Design",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "7903937176815078",
+      "text": "<h2>Part I </h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7989746979990755",
+      "text": "<h2>Putting the Model To Work</h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5705538062019564",
+      "text": "[[Unknown Pattern]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5013780145245580",
+      "text": "[[Ubiquitous Language]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2971384905223542",
+      "text": "[[Model-Driven Design]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3221493042461824",
+      "text": "<h2>Part II </h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6293635401804466",
+      "text": "[[Hands-On Modelers]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5362217166173649",
+      "text": "These patterns cast widely held best practices of object-oriented design in the light of domain-driven design. They guide decisions to clarify the model and to keep the model and implementation aligned with each other, each reinforcing the other's effectiveness. Careful crafting the details of individual model elements gives developers a steady platform from which to apply the modeling approaches of Parts III and IV."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9748169148436858",
+      "text": "[[Building Blocks of a Model-Driven Design]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6176962152192011",
+      "text": "[[Layered Architecture]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7154518282077500",
+      "text": "[[Entities (aka Reference Objects)]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1364950073354085",
+      "text": "[[Value Objects]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2003867913812732",
+      "text": "[[Services]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5766201037003086",
+      "text": "[[Modules (aka Packages)]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0553506587632945",
+      "text": "[[Aggregates]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6327608851195852",
+      "text": "[[Factories]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0582439579182686",
+      "text": "<h2>Part III </h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6468569458185607",
+      "text": "<h2>Refactoring Toward Deeper Insight</h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8046627403527488",
+      "text": "Using a proven set of basic building blocks along with consistent language brings some sanity to the development effort. This leaves the challenge of actually <em>finding</em> an incisive model, one that captures subtle concerns of the domain experts and can drive a practical design. A model that sloughs off the superficial and captures the essential is a <i>deep model</i>. This should make the software more in tune with the way the domain experts think and more responsive to the user's needs."
+    }
+,    {
+      "type": "paragraph",
+      "id": "0525285402078367",
+      "text": "Traditionally, refactoring is described in terms of code transformations with technical motivations. Refactoring can also be motivated by an insight into the domain and a corresponding refinement of the model or its expression in code."
+    }
+,    {
+      "type": "paragraph",
+      "id": "1645937001981241",
+      "text": "Sophisticated domain models are seldom developed except through an iterative process of refactoring, including close involvement of the domain experts with developers interested in learning about the domain."
+    }
+,    {
+      "type": "paragraph",
+      "id": "2725246954405475",
+      "text": "Supple Design"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3668680503179083",
+      "text": " <img border=0 width=290 height=259 src=\"files/image008.jpg\" v:shapes=\"_x0000_i1028\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1108271102216900",
+      "text": "To have a project accelerate as development proceeds&#8212;rather than get weighed down by its own legacy&#8212;demands a design that is a pleasure to work with, inviting to change. A supple design."
+    }
+,    {
+      "type": "paragraph",
+      "id": "8839181498600658",
+      "text": "Supple design is the complement to deep modeling."
+    }
+,    {
+      "type": "paragraph",
+      "id": "3681269160962262",
+      "text": "Developers play two roles, each of which must be served by the design. The same person might well play both roles&#8212;even switch back and forth in minutes&#8212;but the relationship to the code is different nonetheless. One role is the developer of a client, who weaves the domain objects into the application code or other domain layer code, utilizing capabilities of the design. A supple design reveals a deep underlying model that makes its potential clear. The client developer can flexibly use a minimal set of loosely coupled concepts to express a range of scenarios in the domain. Design elements fit together in a natural way with a result that is predictable, clearly characterized, and robust."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5727709526551739",
+      "text": "Equally important, the design must serve the developer working to change it. To be open to change, a design must be easy to understand, revealing that <em>same</em> underlying model that the client developer is drawing on. It must follow the contours of a deep model of the domain, so most changes bend the design at flexible points. The effects of its code must be transparently obvious, so the consequences of a change will be easy to anticipate."
+    }
+,    {
+      "type": "paragraph",
+      "id": "6657214215795120",
+      "text": "<h3>Making Behavior Obvious</h3>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3582660426797139",
+      "text": "[[Repositories]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8485399261030227",
+      "text": "[[Intention-Revealing Interfaces]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6983685823403865",
+      "text": "[[Side-Effect-Free Functions]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8158092892141775",
+      "text": "<h3>Reducing Cost of Change</h3>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3874860950238021",
+      "text": "[[Assertions]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0983075530890468",
+      "text": "[[Conceptual Contours]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0588843788859099",
+      "text": "[[Standalone Classes]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0022899268131192",
+      "text": "<h3>Declarative Design</h3>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5208182018182251",
+      "text": "There can be no real guarantees in handwritten software. To name just one way of evading assertions, code could have additional side effects that were not specifically excluded. No matter how model-driven our design is, we still end up writing procedures to produce the effect of the conceptual interactions. And we spend so much of our time writing boilerplate code that doesn't really add any meaning <em>or</em> behavior. Intention-revealing interfaces and the other patterns in this chapter help, but they can never give conventional object-oriented programs formal rigor."
+    }
+,    {
+      "type": "paragraph",
+      "id": "6981348220277428",
+      "text": "These are some of the motivations behind <i>declarative design</i>. This term means many things to many people, but usually it indicates a way to write a program, or some part of a program, as a kind of executable specification. A very precise description of properties actually controls the software. In its various forms, this could be done through a reflection mechanism or at compile time through code generation (producing conventional code automatically, based on the declaration). This approach allows another developer to take the declaration at face value. It is an absolute guarantee."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7980375593468956",
+      "text": "Many declarative approaches can be corrupted if the developers bypass them intentionally or unintentionally. This is likely when the system is difficult to use or overly restrictive. Everyone has to follow the rules of the framework in order to get the benefits of a declarative program."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5322221999649159",
+      "text": "."
+    }
+,    {
+      "type": "paragraph",
+      "id": "1013697879447185",
+      "text": "<h3>A Declarative Style of Design</h3>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "4550059680206518",
+      "text": "Once your design has intention-revealing interfaces, side-effect-free functions, and assertions, you are edging into declarative territory. Many of the benefits of declarative design are obtained once you have combinable elements that communicate their meaning, and have characterized or obvious effects, or no observable effects at all."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5863100284057678",
+      "text": "A supple design can make it possible for the client code to use a declarative <em>style</em> of design. To illustrate, the next section will bring together some of the patterns in this chapter to make the specification more supple and declarative."
+    }
+,    {
+      "type": "paragraph",
+      "id": "4870778472247435",
+      "text": "Drawing on Established Formalisms"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6622421757749983",
+      "text": "Creating a tight conceptual framework from scratch is something you can't do every day. Sometimes you discover and refine one of these over the course of the life of a project. But you can often use and adapt conceptual systems that are long established in your domain or others, some of which have been refined and distilled over centuries. Many business applications involve accounting, for example. Accounting defines a well-developed set of entities and rules that make for an easy adaptation to a deep model and a supple design."
+    }
+,    {
+      "type": "paragraph",
+      "id": "8132962955468460",
+      "text": "There are many such formalized conceptual frameworks, but my personal favorite is math. It is surprising how useful it can be to pull out some twist on basic arithmetic. Many domains include math somewhere. Look for it. Dig it out. Specialized math is clean, combinable by clear rules, and people find it easy to understand. One example from my past is \"Shares Math,\" which will end this chapter."
+    }
+,    {
+      "type": "paragraph",
+      "id": "0162074752727431",
+      "text": "<h2>Part IV </h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "9677661042426403",
+      "text": "<h2>Strategic Design Maintaining Model Integrity</h2>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "9721306784736743",
+      "text": "<img border=0 width=434 height=231 src=\"files/image010.gif\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "9821730282784985",
+      "text": "[[Closure of Operations]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3712393758937181",
+      "text": "[[Bounded Context]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7229433115344588",
+      "text": "[[Continuous Integration]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5016581630636491",
+      "text": "[[Context Map]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7942613887855500",
+      "text": "[[Shared Kernel]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1281138261134643",
+      "text": "[[Customer/Supplier Development Teams]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5391340968449730",
+      "text": "[[Conformist]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5361329636688696",
+      "text": "[[Anticorruption Layer]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0079007870367976",
+      "text": "[[Separate Ways]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3222661591781875",
+      "text": "[[Open Host Service]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1406453402307394",
+      "text": "Distillation"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7405869836841330",
+      "text": " <img border=0 width=180 height=111 src=\"files/image016.gif\" v:shapes=\"_x0000_i1032\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6084628731423077",
+      "text": "&#8212;James Clerk Maxwell, A Treatise on Electricity and Magnetism, 1873"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3753135957129404",
+      "text": "These four equations, along with the definitions of their terms and the body of mathematics they rest on, express the entirety of classical nineteenth-century electromagnetism."
+    }
+,    {
+      "type": "paragraph",
+      "id": "8025697555210287",
+      "text": "[[Published Language]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2391773615444066",
+      "text": "[[Core Domain]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5757290546818257",
+      "text": "[[Generic Subdomains]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0523254688556189",
+      "text": "[[Domain Vision Statement]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6800203532113028",
+      "text": "Although the vision statement and highlighted core inform and guide, they do not actually modify the model or the code itself. Partitioning generic subdomains physically removes some distracting elements. Next we'll look at other ways to structurally change the model and the design itself to make the core domain more visible and manageable. . . ."
+    }
+,    {
+      "type": "paragraph",
+      "id": "3412669045603199",
+      "text": "[[Highlighted Core]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1890018067592074",
+      "text": "[[Cohesive Mechanisms]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1438012140318358",
+      "text": "[[Segregated Core]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3672723337456616",
+      "text": "Large-Scale Structure"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1385113151466395",
+      "text": "<i>Thousands of people worked independently to create the AIDS Quilt.</i>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7037298943633437",
+      "text": "<em>A \"large-scale structure\" is a language that lets you discuss and understand the system in broad strokes.</em> A set of high-level concepts or rules, or both, establishes a pattern of design for an entire system. This organizing principle can guide design as well as aid understanding. It helps coordinate independent work because there is a shared concept of the big picture: how the roles of various parts shape the whole."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5130226225343906",
+      "text": "[[Abstract Core]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8946770902537393",
+      "text": "[[Evolving Order]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8368705848429764",
+      "text": "[[System Metaphor]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "9306671276466565",
+      "text": "[[Responsibility Layers]]"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2958531798777953",
+      "text": "[[Knowledge Level]]"
+    }
+
+          ]
+        }

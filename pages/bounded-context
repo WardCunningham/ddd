@@ -1,0 +1,21 @@
+        {
+          "title": "Bounded Context",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "9099237121300581",
+      "text": "Multiple models are in play on any large project. Yet when code based on distinct models is combined, software becomes buggy, unreliable, and difficult to understand. Communication among team members becomes confused. It is often unclear in what context a model should <i>not</i> be applied."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5763262047420669",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "3874237979025925",
+      "text": "Explicitly define the context within which a model applies. Explicitly set boundaries in terms of team organization, usage within specific parts of the application, and physical manifestations such as code bases and database schemas. Keep the model strictly consistent within these bounds, but don't be distracted or confused by issues outside."
+    }
+
+          ]
+        }

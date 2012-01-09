@@ -1,0 +1,46 @@
+        {
+          "title": "Context Map",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "0012441036475726",
+      "text": " <img border=0 width=285 height=147 src=\"files/image012.gif\" v:shapes=\"_x0000_i1030\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5708120737639374",
+      "text": "An individual bounded context leaves some problems in the absence of a global view. The context of other models may still be vague and in flux."
+    }
+,    {
+      "type": "paragraph",
+      "id": "1152486331409776",
+      "text": "* * *"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8182596954788758",
+      "text": "People on other teams won't be very aware of the context bounds and will unknowingly make changes that blur the edges or complicate the interconnections. When connections must be made between different contexts, they tend to bleed into each other."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9579695207735671",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1758139894366810",
+      "text": "Identify each model in play on the project and define its bounded context. This includes the implicit models of non-object-oriented subsystems. Name each bounded context, and make the names part of the ubiquitous language."
+    }
+,    {
+      "type": "paragraph",
+      "id": "1631235236223648",
+      "text": "Describe the points of contact between the models, outlining explicit translation for any communication and highlighting any sharing."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9162256109668493",
+      "text": "Map the <em>existing</em> terrain. Take up transformations later."
+    }
+
+          ]
+        }

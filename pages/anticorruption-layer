@@ -1,0 +1,31 @@
+        {
+          "title": "Anticorruption Layer",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "7736764088870180",
+      "text": "New systems almost always have to be integrated with legacy or other systems, which have their own models. When control or communication is not adequate to pull off a shared kernel or customer/supplier development teams, the interface can become more complex. Translation layers can be simple, even elegant, when bridging well-designed bounded contexts with cooperative teams. But when the other side of the boundary starts to leak through, the translation layer may take on a more defensive tone."
+    }
+,    {
+      "type": "paragraph",
+      "id": "4306213417074123",
+      "text": "* * *"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2754137603176327",
+      "text": "When a new system is being built that must have a large interface with another, the difficulty of relating the two models can eventually overwhelm the intent of the new model altogether, causing it to be modified to resemble the other system's model, in an ad hoc fashion. The models of legacy systems are usually weak, and even the exception that is well developed may not fit the needs of the current project. Yet there may be a lot of value in the integration, and sometimes it is an absolute requirement."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9813836198404624",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0108393676844153",
+      "text": "Create an isolating layer to provide clients with functionality in terms of their own domain model. The layer talks to the other system through its existing interface, requiring little or no modification to the other system. Internally, the layer translates in both directions as necessary between the two models."
+    }
+
+          ]
+        }

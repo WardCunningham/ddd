@@ -1,0 +1,41 @@
+        {
+          "title": "Abstract Core",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "4697262819394324",
+      "text": " <img border=0 width=141 height=143 src=\"files/image020.gif\" v:shapes=\"_x0000_i1034\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6400331048570070",
+      "text": "Even the core domain model usually has so much detail that communicating the big picture can be difficult."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9513755367994378",
+      "text": "When there is a lot of interaction between subdomains in separate modules, either many references will have to be created between modules, which defeats much of the value of the partitioning, or the interaction will have to be made indirect, which makes the model obscure."
+    }
+,    {
+      "type": "paragraph",
+      "id": "1122630024153554",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8931127016205139",
+      "text": "Identify the most fundamental concepts in the model and factor them into distinct classes, abstract classes, or interfaces. Design this abstract model so that it expresses most of the interaction between significant components. Place this abstract overall model in its own module, while the specialized, detailed implementation classes are left in their own modules defined by subdomain."
+    }
+,    {
+      "type": "paragraph",
+      "id": "5380813796829568",
+      "text": "In a large system without any overarching principle that allows elements to be interpreted in terms of their role in patterns that span the whole design, <i>developers cannot see the forest for the trees.</i> We need to be able to understand the role of an individual part in the whole without delving into the details of the whole."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7112546337531674",
+      "text": "Devise a pattern of rules or roles and relationships that will span the entire system and that allows some understanding of each part's place in the whole&#8212;even without detailed knowledge of the part's responsibility."
+    }
+
+          ]
+        }

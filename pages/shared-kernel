@@ -1,0 +1,41 @@
+        {
+          "title": "Shared Kernel",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "6219888938344999",
+      "text": " <img border=0 width=276 height=192 src=\"files/image014.gif\" v:shapes=\"_x0000_i1031\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8196099375547103",
+      "text": "When functional integration is limited, the overhead of continuous integration may be deemed too high. This may especially be true when the teams do not have the skill or the political organization to maintain continuous integration, or when a single team is simply too big and unwieldy. So separate bounded contexts might be defined and multiple teams formed."
+    }
+,    {
+      "type": "paragraph",
+      "id": "0441589324309139",
+      "text": "* * *"
+    }
+,    {
+      "type": "paragraph",
+      "id": "7995401453234939",
+      "text": "Uncoordinated teams working on closely related applications can go racing forward for a while, but what they produce may not fit together. They can end up spending more on translation layers and retrofitting than they would have on continuous integration in the first place, meanwhile duplicating effort and losing the benefits of a common ubiquitous language."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7645345144207780",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "4102118976120393",
+      "text": "Designate some subset of the domain model that the two teams agree to share. Of course this includes, along with this subset of the model, the subset of code or of the database design associated with that part of the model. This explicitly shared stuff has special status, and shouldn't be changed without consultation with the other team."
+    }
+,    {
+      "type": "paragraph",
+      "id": "4890676301880876",
+      "text": "Integrate a functional system frequently, but somewhat less often than the pace of continuous integration within the teams. At these integrations, run the tests of both teams."
+    }
+
+          ]
+        }

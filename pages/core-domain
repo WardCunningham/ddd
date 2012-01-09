@@ -1,0 +1,36 @@
+        {
+          "title": "Core Domain",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "7102674742720807",
+      "text": " <img border=0 width=290 height=214 src=\"files/image018.jpg\" v:shapes=\"_x0000_i1033\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "8084547237403069",
+      "text": "In designing a large system, there are so many contributing components, all complicated and all absolutely necessary to success, that the essence of the domain model, the real business asset, can be obscured and neglected."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7556781029271579",
+      "text": "The harsh reality is that not all parts of the design are going to be equally refined. Priorities must be set. To make the domain model an asset, the critical core of that model has to be sleek and fully leveraged to create application functionality. But scarce, highly skilled developers tend to gravitate to technical infrastructure or neatly definable domain problems that can be understood without specialized domain knowledge."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7882073927195936",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1425935926729719",
+      "text": "Boil the model down. Find the core domain and provide a means of easily distinguishing it from the mass of supporting model and code. Bring the most valuable and specialized concepts into sharp relief. Make the core small."
+    }
+,    {
+      "type": "paragraph",
+      "id": "4537050739516977",
+      "text": "Apply top talent to the core domain, and recruit accordingly. Spend the effort in the core to find a deep model and develop a supple design&#8212;sufficient to fulfill the vision of the system. Justify investment in any other part by how it supports the distilled core."
+    }
+
+          ]
+        }

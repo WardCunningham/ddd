@@ -1,0 +1,31 @@
+        {
+          "title": "Closure of Operations",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "1042118529646537",
+      "text": "Most interesting objects end up doing things that can't be characterized by primitives alone."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7420846445879356",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "6152210342572112",
+      "text": "Where it fits, define an operation whose return type is the same as the type of its argument(s). If the implementer has state that is used in the computation, then the implementer is effectively an argument of the operation, so the argument(s) and return value should be of the same type as the implementer. Such an operation is closed under the set of instances of that type. A closed operation provides a high-level interface without introducing any dependency on other concepts."
+    }
+,    {
+      "type": "paragraph",
+      "id": "6656276749889861",
+      "text": "This pattern is most often applied to the operations of a value object. Because the life cycle of an entity has significance in the domain, you can't just conjure up a new one to answer a question. There are operations that are closed under an entity type. You could ask an Employee object for its supervisor and get back another Employee. But in general, entities are not the sort of concepts that are likely to be the result of a computation. So, for the most part, this is an opportunity to look for in the value objects."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7652081834546556",
+      "text": "You sometimes get halfway to this pattern. The argument matches the implementer, but the return type is different, or the return type matches the receiver and the argument is different. These operations are not closed, but they do give some of the advantages of closure. When the extra type is a primitive or basic library class, it frees the mind almost as much as closure."
+    }
+
+          ]
+        }

@@ -1,0 +1,1619 @@
+<h2><a name="_Toc35711978"></a><a name="_Toc506650221"><span style='mso-bookmark:
+_Toc35711978'>Part I </span></a></h2>
+
+<h2><span style='mso-bookmark:_Toc506650221'><span style='mso-bookmark:_Toc35711978'>Putting
+the Model To Work</span></span></h2>
+
+<p class=PatternTitle>Ubiquitous Language</a></p>
+
+<p class=PatternContext>To create a supple, knowledge-rich design calls for a
+versatile, shared team language, and a lively experimentation with language
+that seldom happens on software projects.</p>
+
+<p class=PatternProblemHighlight>A project faces serious problems when its
+language is fractured. Domain experts use their jargon while technical team
+members have their own language tuned for discussing the domain in terms of
+design. </p>
+
+<p class=PatternProblemHighlight>The terminology of day-to-day discussions is
+disconnected from the terminology embedded in the code (ultimately the most
+important product of a software project). And even the same person uses
+different language in speech and in writing, so that the most incisive
+expressions of the domain often emerge in a transient form that is never
+captured in the code or even in writing.</p>
+
+<p class=PatternProblemHighlight>Translation blunts communication and makes
+knowledge crunching anemic. </p>
+
+<p class=PatternProblemHighlight>Yet none of these dialects can be a common
+language because none serves all needs.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Use the model as the backbone of a language.
+Commit the team to exercising that language relentlessly in all communication
+within the team and in the code. Use the same language in diagrams, writing,
+and especially speech.</p>
+
+<p class=PatternSolutionHighlight>Iron out difficulties by experimenting with
+alternative expressions, which reflect alternative models. Then refactor the
+code, renaming classes, methods, and modules to conform to the new model.
+Resolve confusion over terms in conversation, in just the way we come to agree
+on the meaning of ordinary words. </p>
+
+<p class=PatternSolutionHighlight>Recognize that a change in the language is a
+change to the model.</p>
+
+<p class=PatternSolutionHighlight>Domain experts should object to terms or
+structures that are awkward or inadequate to convey domain understanding;
+developers should watch for ambiguity or inconsistency that will trip up design.</p>
+
+<p class=PatternSolutionHighlight>With a <span class=PatternMention>ubiquitous
+language</span>, the model is not just a design artifact. It becomes integral
+to everything the developers and domain experts do together.</p>
+
+<p class=PatternTherefore>Also,</p>
+
+<p class=PatternSolutionHighlight>Play with the model as you talk about the
+system. Describe scenarios out loud using the elements and interactions of the
+model, combining concepts in ways allowed by the model. Find easier ways to say
+what you need to say, and then take those new ideas back down to the diagrams
+and code.</p>
+
+<p class=PatternTitle><a name="_Toc35711981"></a><a name="_Toc456714429"><span
+style='mso-bookmark:_Toc35711981'>Model-Driven Design</span></a></p>
+
+<p class=PatternContext>Tightly relating the code to an underlying model gives
+the code meaning and makes the model relevant.</p>
+
+<p class=PatternProblemHighlight>If the design, or some central part of it,
+does not map to the domain model, that model is of little value, and the
+correctness of the software is suspect. At the same time, complex mappings
+between models and design functions are difficult to understand and, in
+practice, impossible to maintain as the design changes. A deadly divide opens
+between analysis and design so that insight gained in each of those activities
+does not feed into the other.</p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>Design a portion of the software system to
+reflect the domain model in a very literal way, so that mapping is obvious.
+Revisit the model and modify it to be implemented more naturally in software,
+even as you seek to make it reflect deeper insight into the domain. Demand a
+single model that serves both purposes well, in addition to supporting a fluent
+<span class=PatternMention>ubiquitous language</span>. </p>
+
+<p class=PatternSolutionHighlight>Draw from the model the terminology used in
+the design and the basic assignment of responsibilities. The code becomes an
+expression of the model, so a change to the code may be a change to the model.
+Its effect must ripple through the rest of the project's activities
+accordingly.</p>
+
+<p class=PatternSolutionHighlight>To tie the implementation slavishly to a
+model usually requires software development tools and languages that support a
+modeling paradigm, such as object-oriented programming.</p>
+
+<p class=PatternTitle><a name="_Toc35711983">Hands-On Modelers</a></p>
+
+<p class=PatternProblemHighlight>If the people who write the code do not feel
+responsible for the model, or don't understand how to make the model work for
+an application, then the model has nothing to do with the software. If
+developers don't realize that changing code changes the model, then their
+refactoring will weaken the model rather than strengthen it. Meanwhile, when a
+modeler is separated from the implementation process, he or she never acquires,
+or quickly loses, a feel for the constraints of implementation. The basic
+constraint of <span class=PatternMention>model-driven design</span>&#8212;that
+the model supports an effective implementation and abstracts key insights into
+the domain&#8212;is half-gone, and the resulting models will be impractical.
+Finally, the knowledge and skills of experienced designers won't be transferred
+to other developers if the division of labor prevents the kind of collaboration
+that conveys the subtleties of coding a <span class=PatternMention>model-driven
+design</span>.</p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>Any technical person contributing to the
+model must spend some time touching the code, whatever primary role he or she
+plays on the project. Anyone responsible for changing code must learn to
+express a model through the code. Every developer must be involved in some
+level of discussion about the model and have contact with domain experts. Those
+who contribute in different ways must consciously engage those who touch the
+code in a dynamic exchange of model ideas through the <span
+class=PatternMention>ubiquitous language</span>.</p>
+
+<h2><a name="_Toc35711986">Part II </a></h2>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35711986'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;line-height:200%;font-family:
+"Times New Roman";mso-bidi-font-family:Arial;font-variant:normal !important;
+color:windowtext;letter-spacing:0pt;mso-font-kerning:0pt;mso-bidi-font-style:
+italic'>Building Blocks of a </span></span><span style='mso-bookmark:_Toc35711986'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;line-height:200%;font-family:
+"Times New Roman";mso-bidi-font-family:Arial;color:windowtext;letter-spacing:
+0pt;mso-font-kerning:0pt;mso-bidi-font-style:italic'>Model-Driven Design<o:p></o:p></span></span></p>
+
+<p class=MsoBodyText><span style='mso-bookmark:_Toc35711986'>These patterns
+cast widely held best practices of object-oriented design in the light of
+domain-driven design. They guide decisions to clarify the model and to keep the
+model and implementation aligned with each other, each reinforcing the other's
+effectiveness. Careful crafting the details of individual model elements gives
+developers a steady platform from which to apply the modeling approaches of
+Parts III and IV. </span></p>
+
+<p class=PatternTitle></span><span
+style='mso-bookmark:_Toc35711986'><b><span style='font-size:18.0pt;mso-bidi-font-size:
+14.0pt;line-height:200%;font-family:"Times New Roman";mso-bidi-font-family:
+Arial;font-variant:normal !important;color:windowtext;letter-spacing:0pt;
+mso-font-kerning:0pt;mso-bidi-font-style:italic'><br clear=all
+style='page-break-before:always'>
+</span></b>Layered Architecture</span></p>
+
+<p class=PatternIllustration style='page-break-after:avoid'>
+<span style='mso-bookmark:_Toc35711986'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:409pt;
+ height:296pt'>
+ <v:imagedata src="files/image001.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=411 height=298
+src="files/image002.gif" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=PatternIllustration style='page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:237pt;height:276pt'>
+ <v:imagedata src="files/image003.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=239 height=278
+src="files/image004.gif" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=PatternProblemHighlight>In an object-oriented program, UI, database,
+and other support code often gets written directly into the business objects.
+Additional business logic is embedded in the behavior of UI widgets and
+database scripts. This happens because it is the easiest way to make things
+work, in the short run. </p>
+
+<p class=PatternProblemHighlight>When the domain-related code is diffused
+through such a large amount of other code, it becomes extremely difficult to
+see and to reason about. Superficial changes to the UI can actually change
+business logic. To change a business rule may require meticulous tracing of UI
+code, database code, or other program elements. Implementing coherent,
+model-driven objects becomes impractical. Automated testing is awkward. With
+all the technologies and logic involved in each activity, a program must be kept
+very simple or it becomes impossible to understand. </p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>Partition a complex program into <span
+class=PatternMention>layers. </span>Develop a design within each <span
+class=PatternMention>layer</span> that is cohesive and that depends only on the
+layers below. Follow standard architectural patterns to provide loose coupling
+to the layers above. Concentrate all the code related to the domain model in
+one layer and isolate it from the user interface, application, and
+infrastructure code. The domain objects, free of the responsibility of
+displaying themselves, storing themselves, managing application tasks, and so
+forth, can be focused on expressing the domain model. This allows a model to
+evolve to be rich enough and clear enough to capture essential business
+knowledge and put it to work.</p>
+
+<p class=PatternTitle><a name="_Toc35711991"></a><a name="_Toc456714440"><span
+style='mso-bookmark:_Toc35711991'>Entities</span></a><span style='mso-bookmark:
+_Toc35711991'> (aka Reference Objects)</span></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>Many objects are not fundamentally defined by their
+attributes, but rather by a thread of continuity and identity.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>Some objects are not defined primarily by
+their attributes. They represent a thread of identity that runs through time
+and often across distinct representations. Sometimes such an object must be
+matched with another object even though attributes differ. An object must be
+distinguished from other objects even though they might have the same
+attributes. Mistaken identity can lead to data corruption.</p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>When an object is distinguished by its
+identity, rather than its attributes, make this primary to its definition in
+the model. Keep the class definition simple and focused on life cycle
+continuity and identity. Define a means of distinguishing each object
+regardless of its form or history. Be alert to requirements that call for
+matching objects by attributes. Define an operation that is guaranteed to
+produce a unique result for each object, possibly by attaching a symbol that is
+guaranteed unique. This means of identification may come from the outside, or
+it may be an arbitrary identifier created by and for the system, but it must
+correspond to the identity distinctions in the model. The model must define
+what it <i style='mso-bidi-font-style:normal'>means</i> to be the same thing. </p>
+
+<p class=PatternTitle><a name="_Toc35711992"></a><a name="_Toc456714441"><span
+style='mso-bookmark:_Toc35711992'>Value Objects</span></a></p>
+
+<p class=PatternIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:240pt;height:180pt'>
+ <v:imagedata src="files/image005.png"
+  o:title="ch05_crayons"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=242 height=182
+src="files/image006.gif"
+alt="                               " v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=PatternContext><span class=PatternMention>M</span>any objects have no
+conceptual identity. These objects describe some characteristic of a thing.</p>
+
+<p class=PatternProblemHighlight>Tracking the identity of <span
+class=PatternMention>entities</span> is essential, but attaching identity to
+other objects can hurt system performance, add analytical work, and muddle the
+model by making all objects look the same.</p>
+
+<p class=PatternProblemHighlight>Software design is a constant battle with
+complexity. We must make distinctions so that special handling is applied only
+where necessary.</p>
+
+<p class=PatternProblemHighlight>However, if we think of this category of
+object as just the absence of identity, we haven't added much to our toolbox or
+vocabulary. In fact, these objects have characteristics of their own, and their
+own significance to the model. <i style='mso-bidi-font-style:normal'>These are
+the objects that describe things.</i> </p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>When you care only about the attributes of an
+element of the model, classify it as a <span class=PatternMention>value object</span>.
+Make it express the meaning of the attributes it conveys and give it related
+functionality. Treat the <span class=PatternMention>value object</span> as
+immutable. Don't give it any identity and avoid the design complexities
+necessary to maintain <span class=PatternMention>entities</span>.</p>
+
+<p class=PatternTitle><a name="_Toc35711993"></a><a name="_Toc456714448"><span
+style='mso-bookmark:_Toc35711993'>Services</span></a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>Sometimes, it just isn't a thing.</p>
+
+<p class=PatternProblemHighlight>Some concepts from the domain aren't natural
+to model as objects. Forcing the required domain functionality to be the
+responsibility of an <span class=PatternMention>entity</span> or <span
+class=PatternMention>value</span> either distorts the definition of a
+model-based object or adds meaningless artificial objects. </p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>When a significant process or transformation
+in the domain is not a natural responsibility of an <span class=PatternMention>entity</span>
+or <span class=PatternMention>value object</span>, add an operation to the
+model as a standalone interface declared as a <span class=PatternMention>service</span>.
+Define the interface in terms of the language of the model and make sure the
+operation name is part of the <span class=PatternMention>ubiquitous language</span>.
+Make the <span class=PatternMention>service</span> stateless.</p>
+
+<p class=PatternTitle><a name="_Toc35711994">Modules (aka Packages)</a></p>
+
+<p class=PatternProblemHighlight>Everyone uses <span class=PatternMention>modules</span>,
+but few treat them as a full-fledged part of the model. Code gets broken down
+into all sorts of categories, from aspects of the technical architecture to
+developers' work assignments. Even developers who refactor a lot tend to
+content themselves with <span class=PatternMention>modules</span> conceived early
+in the project.</p>
+
+<p class=PatternProblemHighlight>It is a truism that there should be low
+coupling between <span class=PatternMention>modules</span> and high cohesion
+within them. Explanations of coupling and cohesion tend to make them sound like
+technical metrics, to be judged mechanically based on the distributions of
+associations and interactions. Yet it isn't just code being divided into <span
+class=PatternMention>modules</span>, but concepts. There is a limit to how many
+things a person can think about at once (hence low coupling). Incoherent
+fragments of ideas are as hard to understand as an undifferentiated soup of
+ideas (hence high cohesion).</p>
+
+<p class=PatternTherefore>Therefore, </p>
+
+<p class=PatternSolutionHighlight>Choose <span class=PatternMention>modules</span>
+that tell the story of the system and contain a cohesive set of concepts. This
+often yields low coupling between modules, but if it doesn't look for a way to
+change the model to disentangle the concepts, or an overlooked concept that
+might be the basis of a <span class=PatternMention>module</span> that would
+bring the elements together in a meaningful way. Seek low coupling in the sense
+of concepts that can be understood and reasoned about independently of each other.
+Refine the model until it partitions according to high-level domain concepts
+and the corresponding code is decoupled as well.</p>
+
+<p class=PatternSolutionHighlight>Give the <span class=PatternMention>modules</span>
+names that become part of the <span class=PatternMention>ubiquitous language</span>.<span
+class=PatternMention> modules</span> and their names should reflect insight
+into the domain.</p>
+
+<p class=PatternTitle><a name="_Toc35711997">Aggregates</a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>It is difficult to guarantee the consistency
+of changes to objects in a model with complex associations. Invariants need to
+be maintained that apply to closely related groups of objects, not just
+discrete objects. Yet cautious locking schemes cause multiple users to
+interfere pointlessly with each other and make a system unusable.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Cluster the <span class=PatternMention>entities</span>
+and <span class=PatternMention>value objects</span> into <span
+class=PatternMention>aggregates</span> and define boundaries around each.
+Choose one <span class=PatternMention>entity</span> to be the root of each <span
+class=PatternMention>aggregate</span>, and control all access to the objects
+inside the boundary through the root. Allow external objects to hold references
+to the root only. Transient references to internal members can be passed out
+for use within a single operation only. Because the root controls access, it
+cannot be blindsided by changes to the internals. This arrangement makes it
+practical to enforce all invariants for objects in the <span
+class=PatternMention>aggregate</span> and for the <span class=PatternMention>aggregate</span>
+as a whole in any state change.</p>
+
+<p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>(Note: Many such schemes are possible. This section of
+the book describes one particular set of rules in detail.)</p>
+
+<p class=PatternTitle><a name="_Toc35711998"></a><a name="_Toc456714445"><span
+style='mso-bookmark:_Toc35711998'>Factories</span></a> </p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>When creation of an object, or an entire <span
+class=PatternMention>aggregate,</span> becomes complicated or reveals too much
+of the internal structure, <span class=PatternMention>factories</span> provide
+encapsulation.</p>
+
+<p class=PatternSolutionHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>Creation of an object can be a major operation
+in itself, but complex assembly operations do not fit the responsibility of the
+created objects. Combining such responsibilities can produce ungainly designs
+that are hard to understand. Making the client direct construction<span
+style="mso-spacerun:yes">&nbsp; </span>muddies the design of the client,
+breaches encapsulation of the assembled object or <span class=PatternMention>aggregate,</span>
+and overly couples the client to the implementation of the created object.</p>
+
+<p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>Shift the responsibility for creating
+instances of complex objects and <span class=PatternMention>aggregates</span>
+to a separate object, which may itself have no responsibility in the domain
+model but is still part of the domain design. Provide an interface that
+encapsulates all complex assembly and that does not require the client to
+reference the concrete classes of the objects being instantiated. Create entire
+<span class=PatternMention>aggregates</span> as a piece, enforcing their
+invariants.</p>
+
+<p class=PatternTitle><a name="_Toc35711999">Repositories</a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>A client needs a practical means of acquiring
+references to preexisting domain objects. If the infrastructure makes it easy
+to do so, the developers of the client may add more traversable associations,
+muddling the model. On the other hand, they may use queries to pull the exact
+data they need from the database, or to pull a few specific objects rather than
+navigating from <span class=PatternMention>aggregate</span> roots. Domain logic
+moves into queries and client code, and the <span class=PatternMention>entities</span>
+and <span class=PatternMention>value objects</span> become mere data
+containers. The sheer technical complexity of applying most database access
+infrastructure quickly swamps the client code, which leads developers to
+dumb-down the domain layer, which makes the model irrelevant.</p>
+
+<p class=PatternTherefore>Restating the problem:</p>
+
+<p class=PatternProblemHighlight>A subset of persistent objects must be
+globally accessible through a search based on object attributes. Such access is
+needed for the roots of <span class=PatternMention>aggregates</span> that are
+not convenient to reach by traversal. They are usually <span
+class=PatternMention>entities</span>, sometimes <span class=PatternMention>value
+objects</span> with complex internal structure, and sometimes enumerated <span
+class=PatternMention>values</span>. Providing access to other objects muddies
+important distinctions. Free database queries can actually breach the encapsulation
+of domain objects and <span class=PatternMention>aggregates</span>. Exposure of
+technical infrastructure and database access mechanisms complicates the client
+and obscures the <span class=PatternMention>model-driven design</span>.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>For each type of object that needs global
+access, create an object that can provide the illusion of an in-memory
+collection of all objects of that type. Set up access through a well-known
+global interface. Provide methods to add and remove objects, which will
+encapsulate the actual insertion or removal of data in the data store. Provide
+methods that select objects based on some criteria and return fully
+instantiated objects or collections of objects whose attribute values meet the
+criteria, thereby encapsulating the actual storage and query technology.
+Provide repositories only for <span class=PatternMention>aggregate</span> roots
+that actually need direct access. Keep the client focused on the model,
+delegating all object storage and access to the <span class=PatternMention>repositories</span>.</p>
+
+<h2>Part III </h2>
+
+<h2>Refactoring Toward Deeper Insight</h2>
+
+<p class=MsoBodyText>Using a proven set of basic building blocks along with
+consistent language brings some sanity to the development effort. This leaves
+the challenge of actually <em>finding</em> an incisive model, one that captures
+subtle concerns of the domain experts and can drive a practical design. A model
+that sloughs off the superficial and captures the essential is a <i>deep model</i>.
+This should make the software more in tune with the way the domain experts
+think and more responsive to the user's needs.</p>
+
+<p class=MsoBodyText>Traditionally, refactoring is described in terms of code
+transformations with technical motivations. Refactoring can also be motivated
+by an insight into the domain and a corresponding refinement of the model or
+its expression in code.</p>
+
+<p class=MsoBodyText>Sophisticated domain models are seldom developed except
+through an iterative process of refactoring, including close involvement of the
+domain experts with developers interested in learning about the domain.</p>
+
+<span style='font-size:20.0pt;mso-bidi-font-size:10.0pt;line-height:200%;
+font-family:Arial;mso-fareast-font-family:Times;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=ChapterTitle>Supple Design</p>
+
+<p class=ChapterOpenerIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:4in;height:257pt'>
+ <v:imagedata src="files/image007.jpg"
+  o:title="FPO_ch10_bike"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=290 height=259
+src="files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></p>
+
+<p class=MsoBodyText>To have a project accelerate as development
+proceeds&#8212;rather than get weighed down by its own legacy&#8212;demands a
+design that is a pleasure to work with, inviting to change. A supple design.</p>
+
+<p class=MsoBodyText>Supple design is the complement to deep modeling.</p>
+
+<p class=MsoBodyText>Developers play two roles, each of which must be served by
+the design. The same person might well play both roles&#8212;even switch back
+and forth in minutes&#8212;but the relationship to the code is different
+nonetheless. One role is the developer of a client, who weaves the domain
+objects into the application code or other domain layer code, utilizing
+capabilities of the design. A supple design reveals a deep underlying model
+that makes its potential clear. The client developer can flexibly use a minimal
+set of loosely coupled concepts to express a range of scenarios in the domain.
+Design elements fit together in a natural way with a result that is
+predictable, clearly characterized, and robust.</p>
+
+<p class=MsoBodyText>Equally important, the design must serve the developer
+working to change it. To be open to change, a design must be easy to
+understand, revealing that <em>same</em> underlying model that the client
+developer is drawing on. It must follow the contours of a deep model of the
+domain, so most changes bend the design at flexible points. The effects of its
+code must be transparently obvious, so the consequences of a change will be
+easy to anticipate. </p>
+
+<h3>Making Behavior Obvious</h3>
+
+<p class=PatternTitle>Intention-Revealing Interfaces</p>
+
+<p class=PatternProblemHighlight>If a developer must consider the
+implementation of a component in order to use it, the value of encapsulation is
+lost. If someone other than the original developer must infer the purpose of an
+object or operation based on its implementation, that new developer may infer a
+purpose that the operation or class fulfills only by chance. If that was not
+the intent, the code may work for the moment, but the conceptual basis of the
+design will have been corrupted, and the two developers will be working at
+cross-purposes.</p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>Name classes and operations to describe their
+effect and purpose, without reference to the means by which they do what they
+promise. This relieves the client developer of the need to understand the
+internals. These names should conform to the <span class=PatternMention>ubiquitous
+language </span>so that team members can quickly infer their meaning. Write a
+test for a behavior before creating it, to force your thinking into client
+developer mode.</p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc38397916'>Side-Effect-Free
+Functions</span></p>
+
+<p class=PatternProblemHighlight>Interactions of multiple rules or compositions
+of calculations become extremely difficult to predict. The developer calling an
+operation must understand its implementation and the implementation of all its
+delegations in order to anticipate the result. The usefulness of any
+abstraction of interfaces is limited if the developers are forced to pierce the
+veil. Without safely predictable abstractions, the developers must limit the
+combinatory explosion, placing a low ceiling on the richness of behavior that
+is feasible to build.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Place as much of the logic of the program as
+possible into functions, operations that return results with no observable side
+effects. Strictly segregate commands (methods which result in modifications to
+observable state) into very simple operations that do not return domain
+information. Further control side effects by moving complex logic into <span
+class=PatternMention>value objects</span> when a concept fitting the
+responsibility presents itself.</p>
+
+<p class=PatternTitle><a name="_Toc38397917">Assertions</a></p>
+
+<p class=PatternProblemHighlight>When the side effects of operations are only
+defined implicitly by their implementation, designs with a lot of delegation
+become a tangle of cause and effect. The only way to understand a program is to
+trace execution through branching paths. The value of encapsulation is lost.
+The necessity of tracing concrete execution defeats abstraction.</p>
+
+<p class=PatternTherefore>Therefore,</p>
+
+<p class=PatternSolutionHighlight>State post-conditions of operations and
+invariants of classes and <span class=PatternMention>aggregates</span>. If <span
+class=PatternMention>assertions</span> cannot be coded directly in your
+programming language, write automated unit tests for them. Write them into
+documentation or diagrams where it fits the style of the project's development
+process.</p>
+
+<p class=PatternSolutionHighlight>Seek models with coherent sets of concepts,
+which lead a developer to infer the intended <span class=PatternMention>assertions</span>,
+accelerating the learning curve and reducing the risk of contradictory code.</p>
+
+<h3><a name="_Toc38397918">Reducing Cost of Change</a></h3>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc38397918'>Conceptual
+Contours</span></p>
+
+<p class=PatternContext>Sometimes people chop functionality fine to allow
+flexible combination. Sometimes they lump it large to encapsulate complexity.
+Sometimes they seek a consistent granularity, making all classes and operations
+to a similar scale. These are oversimplifications that don't work well as
+general rules. But they are motivated by a basic set of problems.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>When elements of a model or design are
+embedded in a monolithic construct, their functionality gets duplicated. The
+external interface doesn't say everything a client might care about. Their
+meaning is hard to understand, because different concepts are mixed together. </p>
+
+<p class=PatternProblemHighlight>On the other hand, breaking down classes and
+methods can pointlessly complicate the client, forcing client objects to
+understand how tiny pieces fit together. Worse, a concept can be lost
+completely. Half of a uranium atom is not uranium. And of course, it isn't just
+grain size that counts, but just where the grain runs.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Decompose design elements (operations,
+interfaces, classes, and <span class=PatternMention>aggregates</span>) into
+cohesive units, taking into consideration your intuition of the important
+divisions in the domain. Observe the axes of change and stability through
+successive refactorings and look for the underlying <span class=PatternMention>conceptual
+contours</span> that explain these shearing patterns. Align the model with the
+consistent aspects of the domain that make it a viable area of knowledge in the
+first place.</p>
+
+<p class=PatternContext>A supple design based on a deep model yields a simple
+set of interfaces that combine logically to make sensible statements in the <span
+class=PatternMention>ubiquitous language</span>, and without the distraction
+and maintenance burden of irrelevant options.</p>
+
+<p class=PatternTitle><a name="_Toc38397919">Standalone Classes</a></p>
+
+<p class=PatternProblemHighlight>Even within a <span class=PatternMention>module</span>,
+the difficulty of interpreting a design increases wildly as dependencies are
+added. This adds to mental overload, limiting the design complexity a developer
+can handle. Implicit concepts contribute to this load even more than explicit
+references.</p>
+
+<p class=PatternSolutionHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternSolutionHighlight>Low coupling is fundamental to object design.
+When you can, go all the way. Eliminate <em>all</em> other concepts from the
+picture. Then the class will be completely self-contained and can be studied
+and understood alone. Every such self-contained class significantly eases the
+burden of understanding a <span class=PatternMention>module</span>.</p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc38397920'>Closure of
+Operations</span></p>
+
+<p class=AttributionLine><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>Most interesting objects end up doing things
+that can't be characterized by primitives alone.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Where it fits, define an operation whose
+return type is the same as the type of its argument(s). If the implementer has
+state that is used in the computation, then the implementer is effectively an
+argument of the operation, so the argument(s) and return value should be of the
+same type as the implementer. Such an operation is closed under the set of
+instances of that type. A closed operation provides a high-level interface
+without introducing any dependency on other concepts.</p>
+
+<p class=PatternContext>This pattern is most often applied to the operations of
+a <span class=PatternMention>value object</span>. Because the life cycle of an <span
+class=PatternMention>entity</span> has significance in the domain, you can't
+just conjure up a new one to answer a question. There are operations that are
+closed under an <span class=PatternMention>entity</span> type. You could ask an
+<span class=ClassName><span style='mso-bidi-font-family:"Times New Roman"'>Employee</span></span>
+object for its supervisor and get back another <span class=ClassName><span
+style='mso-bidi-font-family:"Times New Roman"'>Employee</span></span>. But in
+general, <span class=PatternMention>entities</span> are not the sort of
+concepts that are likely to be the result of a computation. So, for the most
+part, this is an opportunity to look for in the <span class=PatternMention>value
+objects</span>.</p>
+
+<p class=PatternContext>You sometimes get halfway to this pattern. The argument
+matches the implementer, but the return type is different, or the return type
+matches the receiver and the argument is different. These operations are not
+closed, but they do give some of the advantages of <span class=PatternMention>closure</span>.
+When the extra type is a primitive or basic library class, it frees the mind
+almost as much as <span class=PatternMention>closure</span>.</p>
+
+<h3><a name="_Toc38397921">Declarative Design</a></h3>
+
+<p class=MsoBodyText>There can be no real guarantees in handwritten software.
+To name just one way of evading <span class=PatternMention>assertions</span>,
+code could have additional side effects that were not specifically excluded. No
+matter how <span class=PatternMention>model-driven</span> our design is, we
+still end up writing procedures to produce the effect of the conceptual
+interactions. And we spend so much of our time writing boilerplate code that
+doesn't really add any meaning <em>or</em> behavior. <span
+class=PatternMention>Intention-revealing interfaces</span> and the other
+patterns in this chapter help, but they can never give conventional
+object-oriented programs formal rigor.</p>
+
+<p class=MsoBodyText>These are some of the motivations behind <i>declarative
+design</i>. This term means many things to many people, but usually it
+indicates a way to write a program, or some part of a program, as a kind of
+executable specification. A very precise description of properties actually
+controls the software. In its various forms, this could be done through a
+reflection mechanism or at compile time through code generation (producing
+conventional code automatically, based on the declaration). This approach
+allows another developer to take the declaration at face value. It is an
+absolute guarantee. </p>
+
+<p class=MsoBodyText>Many declarative approaches can be corrupted if the
+developers bypass them intentionally or unintentionally. This is likely when
+the system is difficult to use or overly restrictive. Everyone has to follow
+the rules of the framework in order to get the benefits of a declarative
+program.</p>
+
+<p class=MsoBodyText>.</p>
+
+<h3>A Declarative Style of Design</h3>
+
+<p class=MsoBodyText>Once your design has <span class=PatternMention>intention-revealing
+interfaces</span>, <span class=PatternMention>side-effect-free functions</span>,
+and <span class=PatternMention>assertions</span>, you are edging into declarative
+territory. Many of the benefits of declarative design are obtained once you
+have combinable elements that communicate their meaning, and have characterized
+or obvious effects, or no observable effects at all.</p>
+
+<p class=MsoBodyText>A supple design can make it possible for the client code
+to use a declarative <em>style</em> of design. To illustrate, the next section
+will bring together some of the patterns in this chapter to make the <span
+class=PatternMention>specification</span> more supple and declarative.</p>
+
+<p class=BHead><a name="_Toc38397924">Drawing on Established Formalisms</a></p>
+
+<p class=MsoBodyText>Creating a tight conceptual framework from scratch is
+something you can't do every day. Sometimes you discover and refine one of
+these over the course of the life of a project. But you can often use and adapt
+conceptual systems that are long established in your domain or others, some of
+which have been refined and distilled over centuries. Many business
+applications involve accounting, for example. Accounting defines a
+well-developed set of <span class=PatternMention>entities</span> and rules that
+make for an easy adaptation to a deep model and a supple design. </p>
+
+<p class=MsoBodyText>There are many such formalized conceptual frameworks, but
+my personal favorite is math. It is surprising how useful it can be to pull out
+some twist on basic arithmetic. Many domains include math somewhere. Look for
+it. Dig it out. Specialized math is clean, combinable by clear rules, and
+people find it easy to understand. One example from my past is "Shares Math,"
+which will end this chapter.</p>
+
+<h2>Part IV </h2>
+
+<h2>Strategic Design<br clear=all style='page-break-before:always'>
+<span style='font-size:20.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+mso-fareast-font-family:Times;mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-style:normal'>Maintaining Model Integrity<o:p></o:p></span></h2>
+
+<p><img border=0 width=434 height=231 src="files/image010.gif"></p>
+
+<p class=PatternTitle>Bounded Context</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>Multiple models are in play on any large
+project. Yet when code based on distinct models is combined, software becomes
+buggy, unreliable, and difficult to understand. Communication among team
+members becomes confused. It is often unclear in what context a model should <i>not</i>
+be applied.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Explicitly define the context within which a
+model applies. Explicitly set boundaries in terms of team organization, usage
+within specific parts of the application, and physical manifestations such as
+code bases and database schemas. Keep the model strictly consistent within
+these bounds, but don't be distracted or confused by issues outside.<a
+name="_Toc35712033"></a></p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712033'>Continuous
+Integration</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>Once a <span class=PatternMention>bounded context</span>
+has been defined, we must keep it sound.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>When a number of people are working in the
+same <span class=PatternMention>bounded context,</span> there is a strong
+tendency for the model to fragment. The bigger the team, the bigger the
+problem, but as few as three or four people can encounter serious problems. Yet
+breaking down the system into ever-smaller contexts eventually loses a valuable
+level of integration and coherency.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Institute a process of merging all code and
+other implementation artifacts frequently, with automated tests to flag
+fragmentation quickly. Relentlessly exercise the<span class=PatternMention><span
+style='text-transform:uppercase'> </span>ubiquitous language </span>to hammer
+out a shared view of the model as the concepts evolve in different people's
+heads<span class=PatternMention><span style='text-transform:uppercase'>.<o:p></o:p></span></span></p>
+
+<p class=PatternTitle><a name="_Toc35712034">Context Map</a></p>
+
+<p class=PatternIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" style='width:283pt;height:145pt' o:ole="" fillcolor="window">
+ <v:imagedata src="files/image011.emz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=285 height=147
+src="files/image012.gif" v:shapes="_x0000_i1030"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Visio.Drawing.4" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1261374452">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=PatternContext>An individual <span class=PatternMention>bounded
+context</span> leaves some problems in the absence of a global view. The
+context of other models may still be vague and in flux.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>People on other teams won't be very aware of
+the context bounds and will unknowingly make changes that blur the edges or
+complicate the interconnections. When connections must be made between
+different contexts, they tend to bleed into each other.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Identify each model in play on the project
+and define its <span class=PatternMention>bounded context</span>. This includes
+the implicit models of non-object-oriented subsystems. Name each <span
+class=PatternMention>bounded context</span>, and make the names part of the <span
+class=PatternMention>ubiquitous language</span>.</p>
+
+<p class=PatternSolutionHighlight>Describe the points of contact between the
+models, outlining explicit translation for any communication and highlighting
+any sharing.</p>
+
+<p class=PatternSolutionHighlight>Map the <em>existing</em> terrain. Take up
+transformations later.</p>
+
+<p class=PatternTitle><a name="_Toc35712036">Shared Kernel</a></p>
+
+<p class=PatternIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1031"
+ type="#_x0000_t75" style='width:274pt;height:190pt' o:ole="">
+ <v:imagedata src="files/image013.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=276 height=192
+src="files/image014.gif" v:shapes="_x0000_i1031"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Visio.Drawing.4" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1261374453">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=PatternContext>When functional integration is limited, the overhead of
+<span class=PatternMention>continuous integration</span> may be deemed too
+high. This may especially be true when the teams do not have the skill or the
+political organization to maintain continuous integration, or when a single
+team is simply too big and unwieldy. So separate <span class=PatternMention>bounded
+contexts</span> might be defined and multiple teams formed.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>Uncoordinated teams working on closely related
+applications can go racing forward for a while, but what they produce may not
+fit together. They can end up spending more on translation layers and
+retrofitting than they would have on <span class=PatternMention>continuous
+integration</span> in the first place, meanwhile duplicating effort and losing
+the benefits of a common <span class=PatternMention>ubiquitous language</span>.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Designate some subset of the domain model
+that the two teams agree to share. Of course this includes, along with this
+subset of the model, the subset of code or of the database design associated
+with that part of the model. This explicitly shared stuff has special status,
+and shouldn't be changed without consultation with the other team. </p>
+
+<p class=PatternSolutionHighlight>Integrate a functional system frequently, but
+somewhat less often than the pace of <span class=PatternMention>continuous
+integration</span> within the teams. At these integrations, run the tests of
+both teams.</p>
+
+<p class=PatternTitle><a name="_Toc35712037">Customer/Supplier Development
+Teams</a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>Functionality is often partitioned such that one
+subsystem essentially feeds another; the second performs analysis or other
+functions that feed back very little into the first. In such cases, the two
+subsystems commonly serve very different user communities, with different jobs,
+where different models may be useful. The tool set may also be different,
+meaning that program code cannot be shared.</p>
+
+<p class=PatternSectionBreak align=center style='margin-left:.5in;text-align:center;
+text-indent:-.25in;mso-list:l4 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¬<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>The freewheeling development of the upstream
+team can be cramped if the downstream team has veto power over changes, or if
+procedures for requesting changes are too cumbersome. The upstream team may
+even be inhibited, worried about breaking the downstream system. Meanwhile, the
+downstream team can be helpless, at the mercy of upstream priorities. </p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Establish a clear customer/supplier
+relationship between the two teams. In planning sessions, make the downstream
+team play the customer role to the upstream team. Negotiate and budget tasks
+for downstream requirements so that everyone understands the commitment and
+schedule. </p>
+
+<p class=PatternSolutionHighlight>Jointly develop automated acceptance tests
+that will validate the interface expected. Add these tests to the upstream
+team's test suite, to be run as part of its continuous integration. This
+testing will free the upstream team to make changes without fear of side
+effects downstream.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTitle><a name="_Toc35712038">Conformist</a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternProblemHighlight>When two development teams have an
+upstream/downstream relationship in which the upstream has no motivation to
+provide for the downstream team's needs, the downstream team is helpless.
+Altruism may motivate upstream developers to make promises, but they are
+unlikely to be fulfilled. Belief in those good intentions leads the downstream
+team to make plans based on features that will never be available. The
+downstream project will be delayed until the team ultimately learns to live
+with what it is given. An interface tailored to the needs of the downstream
+team is not in the cards.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Eliminate the complexity of translation
+between <span class=PatternMention>bounded contexts</span> by slavishly
+adhering to the model of the upstream team. Although this cramps the style of
+the downstream designers and probably does not yield the ideal model for the
+application, choosing <span class=PatternMention>conformity</span> enormously
+simplifies integration. Also, you will share a <span class=PatternMention>ubiquitous
+language</span> with your supplier team. The supplier is in the driver's seat,
+so it is good to make communication easy for them. Altruism may be sufficient
+to get them to share information with you. </p>
+
+<p class=PatternTitle><a name="_Toc35712039"></a><a name="_Toc456714437"><span
+style='mso-bookmark:_Toc35712039'>Anticorruption Layer</span></a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>New systems almost always have to be integrated with
+legacy or other systems, which have their own models. When control or
+communication is not adequate to pull off a <span class=PatternMention>shared
+kernel </span>or<span class=PatternMention> customer/supplier development teams</span>,
+the interface can become more complex. Translation layers can be simple, even
+elegant, when bridging well-designed <span class=PatternMention>bounded
+contexts</span> with cooperative teams. But when the other side of the boundary
+starts to leak through, the translation layer may take on a more defensive
+tone. </p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>When a new system is being built that must
+have a large interface with another, the difficulty of relating the two models
+can eventually overwhelm the intent of the new model altogether, causing it to
+be modified to resemble the other system's model, in an ad hoc fashion. The
+models of legacy systems are usually weak, and even the exception that is well
+developed may not fit the needs of the current project. Yet there may be a lot
+of value in the integration, and sometimes it is an absolute requirement.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Create an isolating layer to provide clients
+with functionality in terms of their own domain model. The layer talks to the
+other system through its existing interface, requiring little or no
+modification to the other system. Internally, the layer translates in both
+directions as necessary between the two models.</p>
+
+<p class=PatternTitle><a name="_Toc35712040">Separate Ways</a></p>
+
+<p class=PatternIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>We must be ruthless when it comes to defining
+requirements. If two sets of functionality have no significant relationship,
+they can be completely cut loose from each other.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>Integration is always expensive, and sometimes
+the benefit is small.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Declare a <span class=PatternMention>bounded
+context</span> to have no connection to the others at all, allowing developers
+to find simple, specialized solutions within this small scope.</p>
+
+<p class=PatternTitle><a name="_Toc35712041">Open Host Service</a></p>
+
+<p class=PatternContext>Typically for each <span class=PatternMention>bounded
+context,</span> you will define a translation layer for each component with
+which you have to integrate that is outside the <span class=PatternMention>context</span>.
+Where integration is one-off, this approach of inserting a translation layer
+for each external system avoids corruption of the models with a minimum of
+cost. But when you find your subsystem in high demand, you may need a more
+flexible approach.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>When a subsystem has to be integrated with
+many others, customizing a translator for each can bog down the team. There is
+more and more to maintain, and more and more to worry about when changes are
+made.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Define a protocol that gives access to your
+subsystem as a set of <span class=PatternMention>services</span>. Open the
+protocol so that all who need to integrate with you can use it. Enhance and
+expand the protocol to handle new integration requirements, except when a
+single team has idiosyncratic needs. Then, use a one-off translator to augment
+the protocol for that special case so that the shared protocol can stay simple
+and coherent.</p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712042'>Published
+Language</span></p>
+
+<p class=PatternContext>The translation between the models of two <span
+class=PatternMention>bounded contexts</span> requires a common language.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>Direct translation to and from the existing
+domain models may not be a good solution. Those models may be overly complex or
+poorly factored. They are probably undocumented. If one is used as a data
+interchange language, it essentially becomes frozen and cannot respond to new
+development needs.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Use a well-documented shared language that
+can express the necessary domain information as a common medium of
+communication, translating as necessary into and out of that language.</p>
+
+<span style='font-size:20.0pt;mso-bidi-font-size:10.0pt;line-height:200%;
+font-family:Arial;mso-fareast-font-family:Times;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=ChapterTitle>Distillation</p>
+
+<p class=ChapterOpenerIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1032"
+ type="#_x0000_t75" style='width:178pt;height:109pt' fillcolor="window">
+ <v:imagedata src="files/image015.png"
+  o:title="Maxwell's Equations"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=180 height=111
+src="files/image016.gif" v:shapes="_x0000_i1032"><![endif]></p>
+
+<p class=AttributionLine>&#8212;James Clerk Maxwell, <span style='font-style:
+normal;mso-bidi-font-style:italic'>A Treatise on Electricity and Magnetism</span>,
+1873</p>
+
+<p class=AttributionLine>These four equations, along with the definitions of
+their terms and the body of mathematics they rest on, express the entirety of
+classical nineteenth-century electromagnetism.</p>
+
+<p class=PatternProblemHighlight>How do you focus on your central problem and
+keep from drowning in a sea of side issues?</p>
+
+<p class=PatternProblemHighlight><i>Distillation</i> is the process of
+separating the components of a mixture to extract the essence in a form that
+makes it more valuable and useful. A model is a distillation of knowledge. With
+every refactoring to deeper insight, we abstract some crucial aspect of domain
+knowledge and priorities. Now, stepping back for a strategic view, this chapter
+looks at ways to distinguish broad swaths of the model and distill the domain
+model as a whole.</p>
+
+<p class=PatternTitle>Core Domain</p>
+
+<p class=PatternIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1033"
+ type="#_x0000_t75" style='width:4in;height:212pt'>
+ <v:imagedata src="files/image017.jpg"
+  o:title="FPO_ch15_cropping"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=290 height=214
+src="files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></p>
+
+<p class=PatternProblemHighlight>In designing a large system, there are so many
+contributing components, all complicated and all absolutely necessary to
+success, that the essence of the domain model, the real business asset, can be
+obscured and neglected.</p>
+
+<p class=PatternProblemHighlight>The harsh reality is that not all parts of the
+design are going to be equally refined. Priorities must be set. To make the
+domain model an asset, the critical core of that model has to be sleek and
+fully leveraged to create application functionality. But scarce, highly skilled
+developers tend to gravitate to technical infrastructure or neatly definable
+domain problems that can be understood without specialized domain knowledge.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Boil the model down. Find the <span
+class=PatternMention>core domain</span> and provide a means of easily
+distinguishing it from the mass of supporting model and code. Bring the most
+valuable and specialized concepts into sharp relief. Make the <span
+class=PatternMention>core</span> small.</p>
+
+<p class=PatternSolutionHighlight>Apply top talent to the <span
+class=PatternMention>core domain</span>, and recruit accordingly. Spend the
+effort in the <span class=PatternMention>core</span> to find a deep model and
+develop a supple design&#8212;sufficient to fulfill the vision of the system.
+Justify investment in any other part by how it supports the distilled <span
+class=PatternMention>core</span>.</p>
+
+<p class=PatternTitle><a name="_Toc35712052">Generic Subdomains</a></p>
+
+<p class=PatternProblemHighlight>Some parts of the model add complexity without
+capturing or communicating specialized knowledge. Anything extraneous makes the
+<span class=PatternMention>core domain</span> harder to discern and understand.
+The model clogs up with general principles everyone knows or details that
+belong to specialties which are not your primary focus but play a supporting
+role. Yet, however generic, these other elements are essential to the
+functioning of the system and the full expression of the model.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Identify cohesive subdomains that are not the
+motivation for your project. Factor out generic models of these subdomains and
+place them in separate <span class=PatternMention>modules</span>. Leave no
+trace of your specialties in them. </p>
+
+<p class=PatternSolutionHighlight>Once they have been separated, give their
+continuing development lower priority than the <span class=PatternMention>core
+domain</span>, and avoid assigning your core developers to the tasks (because
+they will gain little domain knowledge from them). Also consider off-the-shelf
+solutions or published models for these <span class=PatternMention>generic
+subdomains</span>.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712053'>Domain Vision
+Statement</span></p>
+
+<p class=PatternProblemHighlight>At the beginning of a project, the model
+usually doesn't even exist, yet the need to focus its development is already
+there. In later stages of development, there is a need for an explanation of
+the value of the system that does not require an in-depth study of the model.
+Also, the critical aspects of the domain model may span multiple <span
+class=PatternMention>bounded contexts</span>, but by definition these distinct
+models can't be structured to show their common focus.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Write a short description (about one page) of
+the <span class=PatternMention>core domain</span> and the value it will bring,
+the "value proposition." Ignore those aspects that do not distinguish this
+domain model from others. Show how the domain model serves and balances diverse
+interests. Keep it narrow. Write this statement early and revise it as you gain
+new insight. </p>
+
+<p class=PatternTitle><a name="_Toc35712054">Highlighted Core</a></p>
+
+<p class=PatternContext>A <span class=PatternMention>domain vision statement</span>
+identifies the <span class=PatternMention>core domain</span> in broad terms,
+but it leaves the identification of the specific <span class=PatternMention>core</span>
+model elements up to the vagaries of individual interpretation. Unless there is
+an exceptionally high level of communication on the team, the <span
+class=PatternMention>vision statement</span> alone will have little impact. </p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>Even though team members may know broadly what
+constitutes the <span class=PatternMention>core domain</span>, different people
+won't pick out quite the same elements, and even the same person won't be
+consistent from one day to the next. The mental labor of constantly filtering
+the model to identify the key parts absorbs concentration better spent on
+design thinking, and it requires comprehensive knowledge of the model. The <span
+class=PatternMention>core domain</span> must be made easier to see.</p>
+
+<p class=PatternProblemHighlight>Significant structural changes to the code are
+the ideal way of identifying the <span class=PatternMention>core domain</span>,
+but they are not always practical in the short term. In fact, such major code
+changes are difficult to undertake without the very view the team is lacking.</p>
+
+<p class=PatternTherefore>Therefore (as one form of <span class=PatternMention>highlighted
+core</span>):</p>
+
+<p class=PatternSolutionHighlight>Write a very brief document (three to seven
+sparse pages) that describes the <span class=PatternMention>core domain</span>
+and the primary interactions among <span class=PatternMention>core</span>
+elements.</p>
+
+<p class=PatternTherefore>Therefore (as another form of <span
+class=PatternMention>highlighted core</span>):</p>
+
+<p class=PatternSolutionHighlight>Flag the elements of the <span
+class=PatternMention>core domain</span> within the primary repository of the
+model, without particularly trying to elucidate its role. Make it effortless
+for a developer to know what is in or out of the <span class=PatternMention>core</span>.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTherefore>As a corollary and process opportunity:</p>
+
+<p class=PatternSolutionHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternSolutionHighlight>If the distillation document outlines the
+essentials of the <span class=PatternMention>core domain</span>, then it serves
+as a practical indicator of the significance of a model change. When a model or
+code change affects the distillation document, it requires consultation with
+other team members. When the change is made, it requires immediate notification
+of all team members, and the dissemination of a new version of the document.
+Changes outside the <span class=PatternMention>core </span>or to details not
+included in the distillation document can be integrated without consultation or
+notification and will be encountered by other members in the course of their
+work. Then the developers have the full autonomy that XP suggests.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=MsoBodyText>Although the <span class=PatternMention>vision statement</span>
+and <span class=PatternMention>highlighted core</span> inform and guide, they
+do not actually modify the model or the code itself. Partitioning <span
+class=PatternMention>generic subdomains</span> physically removes some
+distracting elements. Next we'll look at other ways to structurally change the
+model and the design itself to make the <span class=PatternMention>core domain</span>
+more visible and manageable. . . .</p>
+
+<p class=PatternTitle><a name="_Toc35712055">Cohesive Mechanisms</a></p>
+
+<p class=PatternProblemHighlight>Computations sometimes reach a level of
+complexity that begins to bloat the design. The conceptual "what" is swamped by
+the mechanistic "how." A large number of methods that provide algorithms for
+resolving the problem obscure the methods that express the problem.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Partition a conceptually <span
+class=PatternMention>cohesive mechanism</span> into a separate lightweight
+framework. Particularly watch for formalisms or well-documented categories of
+algorithms. Expose the capabilities of the framework with an <span
+class=PatternMention>intention-revealing interface</span>. Now the other
+elements of the domain can focus on expressing the problem ("what"), delegating
+the intricacies of the solution ("how") to the framework.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternContext>Factoring out <span class=PatternMention>generic
+subdomains</span> reduces clutter, and <span class=PatternMention>cohesive
+mechanisms</span> serve to encapsulate complex operations. This leaves behind a
+more focused model, with fewer distractions that add no particular value to the
+way users conduct their activities. But you are unlikely ever to find good
+homes for <span style='font-style:normal'>everything</span> in the domain model
+that is not <span class=PatternMention>core</span>. The <span
+class=PatternMention>segregated core</span> takes a direct approach to structurally
+marking off the <span class=PatternMention>core domain</span>. . . .</p>
+
+<p class=PatternTitle><a name="_Toc35712057">Segregated Core</a></p>
+
+<p class=PatternProblemHighlight>Elements in the model may partially serve the <span
+class=PatternMention>core</span> <span class=PatternMention>domain </span>and
+partially play supporting roles. <span class=PatternMention>Core</span>
+elements may be tightly coupled to generic ones. The conceptual cohesion of the
+<span class=PatternMention>core</span> may not be strong or visible. All this
+clutter and entanglement chokes the <span class=PatternMention>core</span>.
+Designers can't clearly see the most important relationships, leading to a weak
+design.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Refactor the model to separate the <span
+class=PatternMention>core</span> concepts from supporting players (including
+ill-defined ones) and strengthen the cohesion of the <span
+class=PatternMention>core</span> while reducing its coupling to other code.
+Factor all generic or supporting elements into other objects and place them
+into other packages, even if this means refactoring the model in ways that
+separate highly coupled elements.</p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712058'>Abstract Core</span></p>
+
+<p class=PatternIllustration><!--[if gte vml 1]><v:shape id="_x0000_i1034"
+ type="#_x0000_t75" style='width:139pt;height:141pt' o:ole="">
+ <v:imagedata src="files/image019.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=141 height=143
+src="files/image020.gif" v:shapes="_x0000_i1034"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Visio.Drawing.4" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1261374454">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=PatternContext>Even the <span class=PatternMention>core domain</span>
+model usually has so much detail that communicating the big picture can be
+difficult.</p>
+
+<p class=PatternProblemHighlight>When there is a lot of interaction between
+subdomains in separate <span class=PatternMention>modules</span>, either many
+references will have to be created between <span class=PatternMention>modules</span>,
+which defeats much of the value of the partitioning, or the interaction will
+have to be made indirect, which makes the model obscure.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Identify the most fundamental concepts in the
+model and factor them into distinct classes, abstract classes, or interfaces.
+Design this abstract model so that it expresses most of the interaction between
+significant components. Place this abstract overall model in its own <span
+class=PatternMention>module</span>, while the specialized, detailed
+implementation classes are left in their own <span class=PatternMention>modules
+</span>defined by subdomain.</p>
+
+<span style='font-size:20.0pt;mso-bidi-font-size:10.0pt;line-height:200%;
+font-family:Arial;mso-fareast-font-family:Times;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=ChapterTitle>Large-Scale Structure</p>
+
+<p class=ChapterOpenerIllustration><o:p>&nbsp;</o:p></p>
+
+<p class=PhotoCaption align=center style='text-align:center'><i>Thousands of
+people worked independently to create the AIDS Quilt.<o:p></o:p></i></p>
+
+<p class=PatternProblemHighlight>In a large system without any overarching
+principle that allows elements to be interpreted in terms of their role in
+patterns that span the whole design, <i><span style='mso-bidi-font-weight:bold'>developers
+cannot see the forest for the trees.</span></i> We need to be able to
+understand the role of an individual part in the whole without delving into the
+details of the whole.</p>
+
+<p class=MsoBodyText><em>A "large-scale structure" is a language that lets you
+discuss and understand the system in broad strokes.</em> A set of high-level
+concepts or rules, or both, establishes a pattern of design for an entire
+system. This organizing principle can guide design as well as aid understanding.
+It helps coordinate independent work because there is a shared concept of the
+big picture: how the roles of various parts shape the whole.</p>
+
+<p class=PatternSolutionHighlight>Devise a pattern of rules or roles and
+relationships that will span the entire system and that allows some
+understanding of each part's place in the whole&#8212;even without detailed
+knowledge of the part's responsibility.</p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712062'>Evolving Order</span></p>
+
+<p class=PatternProblemHighlight>Design free-for-alls produce systems no one
+can make sense of as a whole, and they are very difficult to maintain. But
+architectures can straitjacket a project with up-front design assumptions and
+take too much power away from the developers/designers of particular parts of
+the application. Soon, developers will dumb down the application to fit the
+structure, or they will subvert it and have no structure at all, bringing back
+the problems of uncoordinated development.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Let this conceptual large-scale structure<span
+class=PatternMention> </span>evolve with the application, possibly changing to
+a completely different type of structure along the way. Don't over constrain
+the detailed design and model decisions that must be made with detailed
+knowledge.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternSolutionHighlight>Large-scale structure should be applied when
+a structure can be found that greatly clarifies the system without forcing
+unnatural constraints on model development. Because an ill-fitting structure is
+worse than none, it is best not to shoot for comprehensiveness, but rather to
+find a minimal set that solves the problems that have emerged. Less is more. </p>
+
+<p class=MsoBodyText><o:p>&nbsp;</o:p></p>
+
+<p class=PatternContext>What follows is a set of four particular patterns of
+large-scale structure that emerge on some projects and are representative of
+this kind of pattern. </p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTitle><a name="_Toc35712063">System Metaphor</a></p>
+
+<p class=PatternContext>Metaphorical thinking is pervasive in software
+development, especially with models. But the Extreme Programming practice of
+"metaphor" has come to mean a particular way of using a metaphor to bring order
+to the development of a whole system.</p>
+
+<p class=PatternProblemHighlight>Software designs tend to be very abstract and
+hard to grasp. Developers and users alike need tangible ways to understand the
+system and share a view of the system as a whole. </p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>When a concrete analogy to the system emerges
+that captures the imagination of team members and seems to lead thinking in a
+useful direction, adopt it as a large-scale structure. Organize the design
+around this metaphor and absorb it into the <span class=PatternMention>ubiquitous
+language</span>. The <span class=PatternMention>system metaphor </span>should
+both facilitate communication about the system and guide development of it.
+This increases consistency in different parts of the system, potentially even
+across different <span class=PatternMention>bounded contexts</span>. But
+because all metaphors are inexact, continually reexamine the metaphor for
+overextension or inaptness, and be ready to drop it if it gets in the way.</p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712064'>Responsibility
+Layers</span></p>
+
+<p class=PatternContext>Throughout this book, individual objects have been
+assigned narrow sets of related responsibilities. Responsibility-driven design
+also applies to larger scales.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>When each individual object has handcrafted
+responsibilities, there are no guidelines, no uniformity, and no ability to
+handle large swaths of the domain together. To give coherence to a large model,
+it is useful to impose some structure on the assignment of those
+responsibilities. </p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Look at the conceptual dependencies in your
+model and the varying rates and sources of change of different parts of your
+domain. If you identify natural strata in the domain, cast them as broad
+abstract responsibilities. These responsibilities should tell a story of the
+high-level purpose and design of your system. Refactor the model so that the
+responsibilities of each domain object, <span class=PatternMention>aggregate,</span>
+and <span class=PatternMention>module</span> fit neatly within the
+responsibility of one layer.</p>
+
+<p class=PatternTitle><a name="_Toc35712065"></a><a name="_Toc498883542"><span
+style='mso-bookmark:_Toc35712065'>Knowledge Level</span></a></p>
+
+<p class=PatternIllustration><span style="mso-spacerun:yes">&nbsp;</span><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:228pt;height:84pt' o:ole="">
+ <v:imagedata src="files/image021.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=230 height=86
+src="files/image022.gif" v:shapes="_x0000_i1035"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Visio.Drawing.4" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1261374455">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=PatternContext>A group of objects that describe how another group of
+objects should behave (from Martin Fowler's Web site, www.martinfowler.com)</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span> <span
+style="mso-spacerun:yes">&nbsp;</span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>In an application in which the roles and
+relationships between <span class=PatternMention>entities</span> vary in
+different situations, complexity can explode. Neither fully general models nor
+highly customized ones serve the users' needs. Objects end up with references
+to other types to cover a variety of cases, or with attributes that are used in
+different ways in different situations. Classes that have the same data and
+behavior may multiply just to accommodate different assembly rules.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Create a distinct set of objects that can be
+used to describe and constrain the structure and behavior of the basic model.
+Keep these concerns separate as two "levels," one very concrete, the other
+reflecting rules and knowledge that a user or super-user is able to customize. </p>
+
+<p class=PatternProblemHighlight><o:p>&nbsp;</o:p></p>
+
+<p class=PatternTitle><span style='mso-bookmark:_Toc35712066'>Pluggable Component
+Framework</span></p>
+
+<p class=PatternContext>Opportunities arise in a very mature model that is deep
+and distilled. A <span class=PatternMention>pluggable component framework</span>
+usually only comes into play after a few applications have already been
+implemented in the same domain.</p>
+
+<p class=PatternSectionBreak><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>¬</span></span><span style="mso-spacerun:yes">&nbsp; </span><span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>¬</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>¬</span></span></p>
+
+<p class=PatternProblemHighlight>When a variety of applications have to
+interoperate, all based on the same abstractions but designed independently,
+translations between multiple <span class=PatternMention>bounded contexts</span>
+limit integration. A <span class=PatternMention>shared kernel</span> is not
+feasible for teams that do not work closely together. Duplication and fragmentation
+raise costs of development and installation, and interoperability becomes very
+difficult.</p>
+
+<p class=PatternTherefore>Therefore:</p>
+
+<p class=PatternSolutionHighlight>Distill an <span class=PatternMention>abstract
+core</span> of interfaces and interactions and create a framework that allows
+diverse implementations of those interfaces to be freely substituted. Likewise,
+allow any application to use those components, so long as it operates strictly
+through the interfaces of the <span class=PatternMention>abstract core</span>. </p>

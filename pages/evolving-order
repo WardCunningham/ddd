@@ -1,0 +1,31 @@
+        {
+          "title": "Evolving Order",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "5764800298395915",
+      "text": "Design free-for-alls produce systems no one can make sense of as a whole, and they are very difficult to maintain. But architectures can straitjacket a project with up-front design assumptions and take too much power away from the developers/designers of particular parts of the application. Soon, developers will dumb down the application to fit the structure, or they will subvert it and have no structure at all, bringing back the problems of uncoordinated development."
+    }
+,    {
+      "type": "paragraph",
+      "id": "4628193501086125",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "4322624822328136",
+      "text": "Let this conceptual large-scale structure evolve with the application, possibly changing to a completely different type of structure along the way. Don't over constrain the detailed design and model decisions that must be made with detailed knowledge."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9995969484246624",
+      "text": "Large-scale structure should be applied when a structure can be found that greatly clarifies the system without forcing unnatural constraints on model development. Because an ill-fitting structure is worse than none, it is best not to shoot for comprehensiveness, but rather to find a minimal set that solves the problems that have emerged. Less is more."
+    }
+,    {
+      "type": "paragraph",
+      "id": "6641235505740143",
+      "text": "What follows is a set of four particular patterns of large-scale structure that emerge on some projects and are representative of this kind of pattern."
+    }
+
+          ]
+        }

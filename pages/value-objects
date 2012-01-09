@@ -1,0 +1,41 @@
+        {
+          "title": "Value Objects",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "7823858286101896",
+      "text": " <img border=0 width=242 height=182 src=\"files/image006.gif\" alt=\" \" v:shapes=\"_x0000_i1027\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "4256466807976191",
+      "text": "Many objects have no conceptual identity. These objects describe some characteristic of a thing."
+    }
+,    {
+      "type": "paragraph",
+      "id": "9154061695259603",
+      "text": "Tracking the identity of entities is essential, but attaching identity to other objects can hurt system performance, add analytical work, and muddle the model by making all objects look the same."
+    }
+,    {
+      "type": "paragraph",
+      "id": "4934750044628743",
+      "text": "Software design is a constant battle with complexity. We must make distinctions so that special handling is applied only where necessary."
+    }
+,    {
+      "type": "paragraph",
+      "id": "3688470968154019",
+      "text": "However, if we think of this category of object as just the absence of identity, we haven't added much to our toolbox or vocabulary. In fact, these objects have characteristics of their own, and their own significance to the model. <i style='mso-bidi-font-style:normal'>These are the objects that describe things.</i>"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2015302456581036",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1312740633338650",
+      "text": "When you care only about the attributes of an element of the model, classify it as a value object. Make it express the meaning of the attributes it conveys and give it related functionality. Treat the value object as immutable. Don't give it any identity and avoid the design complexities necessary to maintain entities."
+    }
+
+          ]
+        }

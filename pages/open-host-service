@@ -1,0 +1,31 @@
+        {
+          "title": "Open Host Service",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "7820748842077447",
+      "text": "Typically for each bounded context, you will define a translation layer for each component with which you have to integrate that is outside the context. Where integration is one-off, this approach of inserting a translation layer for each external system avoids corruption of the models with a minimum of cost. But when you find your subsystem in high demand, you may need a more flexible approach."
+    }
+,    {
+      "type": "paragraph",
+      "id": "6150261136123015",
+      "text": "* * *"
+    }
+,    {
+      "type": "paragraph",
+      "id": "1018432191760631",
+      "text": "When a subsystem has to be integrated with many others, customizing a translator for each can bog down the team. There is more and more to maintain, and more and more to worry about when changes are made."
+    }
+,    {
+      "type": "paragraph",
+      "id": "6000774172337769",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "5790280318673411",
+      "text": "Define a protocol that gives access to your subsystem as a set of services. Open the protocol so that all who need to integrate with you can use it. Enhance and expand the protocol to handle new integration requirements, except when a single team has idiosyncratic needs. Then, use a one-off translator to augment the protocol for that special case so that the shared protocol can stay simple and coherent."
+    }
+
+          ]
+        }

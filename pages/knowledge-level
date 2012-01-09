@@ -1,0 +1,36 @@
+        {
+          "title": "Knowledge Level",
+          "story": [
+                {
+      "type": "paragraph",
+      "id": "5941151299916895",
+      "text": " <img border=0 width=230 height=86 src=\"files/image022.gif\" v:shapes=\"_x0000_i1035\">"
+    }
+,    {
+      "type": "paragraph",
+      "id": "2290172323398406",
+      "text": "A group of objects that describe how another group of objects should behave (from Martin Fowler's Web site, www.martinfowler.com)"
+    }
+,    {
+      "type": "paragraph",
+      "id": "0821117370143331",
+      "text": "* * *"
+    }
+,    {
+      "type": "paragraph",
+      "id": "4776221786952930",
+      "text": "In an application in which the roles and relationships between entities vary in different situations, complexity can explode. Neither fully general models nor highly customized ones serve the users' needs. Objects end up with references to other types to cover a variety of cases, or with attributes that are used in different ways in different situations. Classes that have the same data and behavior may multiply just to accommodate different assembly rules."
+    }
+,    {
+      "type": "paragraph",
+      "id": "7364069076035186",
+      "text": "Therefore:"
+    }
+,    {
+      "type": "paragraph",
+      "id": "4616304018866029",
+      "text": "Create a distinct set of objects that can be used to describe and constrain the structure and behavior of the basic model. Keep these concerns separate as two \"levels,\" one very concrete, the other reflecting rules and knowledge that a user or super-user is able to customize."
+    }
+
+          ]
+        }
