@@ -3,13 +3,13 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "7848319377903185",
-      "text": "Even within a module, the difficulty of interpreting a design increases wildly as dependencies are added. This adds to mental overload, limiting the design complexity a developer can handle. Implicit concepts contribute to this load even more than explicit references."
+      "id": "8508565655532940",
+      "text": "Even within a [[modules]], the difficulty of interpreting a design increases wildly as dependencies are added. This adds to mental overload, limiting the design complexity a developer can handle. Implicit concepts contribute to this load even more than explicit references."
     }
 ,    {
       "type": "paragraph",
-      "id": "4522806647243638",
-      "text": "Low coupling is fundamental to object design. When you can, go all the way. Eliminate <em>all</em> other concepts from the picture. Then the class will be completely self-contained and can be studied and understood alone. Every such self-contained class significantly eases the burden of understanding a module."
+      "id": "9933753036936439",
+      "text": "Low coupling is fundamental to object design. When you can, go all the way. Eliminate <em>all</em> other concepts from the picture. Then the class will be completely self-contained and can be studied and understood alone. Every such self-contained class significantly eases the burden of understanding a [[modules]]."
     }
 
           ]

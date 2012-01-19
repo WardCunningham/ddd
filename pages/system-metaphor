@@ -3,23 +3,23 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "4837631550780649",
+      "id": "2468380255351986",
       "text": "Metaphorical thinking is pervasive in software development, especially with models. But the Extreme Programming practice of \"metaphor\" has come to mean a particular way of using a metaphor to bring order to the development of a whole system."
     }
 ,    {
       "type": "paragraph",
-      "id": "2608229832723475",
+      "id": "1946982839311429",
       "text": "Software designs tend to be very abstract and hard to grasp. Developers and users alike need tangible ways to understand the system and share a view of the system as a whole."
     }
 ,    {
       "type": "paragraph",
-      "id": "2853569054171322",
+      "id": "4453586903402420",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "5982856947706096",
-      "text": "When a concrete analogy to the system emerges that captures the imagination of team members and seems to lead thinking in a useful direction, adopt it as a large-scale structure. Organize the design around this metaphor and absorb it into the ubiquitous language. The system metaphor should both facilitate communication about the system and guide development of it. This increases consistency in different parts of the system, potentially even across different bounded contexts. But because all metaphors are inexact, continually reexamine the metaphor for overextension or inaptness, and be ready to drop it if it gets in the way."
+      "id": "8971124418650777",
+      "text": "When a concrete analogy to the system emerges that captures the imagination of team members and seems to lead thinking in a useful direction, adopt it as a large-scale structure. Organize the design around this metaphor and absorb it into the [[ubiquitous language]]. The [[system metaphor]]should both facilitate communication about the system and guide development of it. This increases consistency in different parts of the system, potentially even across different [[bounded context]]. But because all metaphors are inexact, continually reexamine the metaphor for overextension or inaptness, and be ready to drop it if it gets in the way."
     }
 
           ]

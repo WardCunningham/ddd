@@ -3,28 +3,28 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "5657615283582646",
+      "id": "0386220575573703",
       "text": "Throughout this book, individual objects have been assigned narrow sets of related responsibilities. Responsibility-driven design also applies to larger scales."
     }
 ,    {
       "type": "paragraph",
-      "id": "9168223801057754",
+      "id": "8318372066746863",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "7799712493104463",
+      "id": "9228880829337074",
       "text": "When each individual object has handcrafted responsibilities, there are no guidelines, no uniformity, and no ability to handle large swaths of the domain together. To give coherence to a large model, it is useful to impose some structure on the assignment of those responsibilities."
     }
 ,    {
       "type": "paragraph",
-      "id": "7311623942383776",
+      "id": "3384098126657826",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "8834127080983762",
-      "text": "Look at the conceptual dependencies in your model and the varying rates and sources of change of different parts of your domain. If you identify natural strata in the domain, cast them as broad abstract responsibilities. These responsibilities should tell a story of the high-level purpose and design of your system. Refactor the model so that the responsibilities of each domain object, aggregate, and module fit neatly within the responsibility of one layer."
+      "id": "0058896904675783",
+      "text": "Look at the conceptual dependencies in your model and the varying rates and sources of change of different parts of your domain. If you identify natural strata in the domain, cast them as broad abstract responsibilities. These responsibilities should tell a story of the high-level purpose and design of your system. Refactor the model so that the responsibilities of each domain object, [[aggregates]] and [[modules]] fit neatly within the responsibility of one layer."
     }
 
           ]

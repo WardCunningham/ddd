@@ -3,28 +3,28 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "8953899862074338",
+      "id": "7352739878726425",
       "text": "We must be ruthless when it comes to defining requirements. If two sets of functionality have no significant relationship, they can be completely cut loose from each other."
     }
 ,    {
       "type": "paragraph",
-      "id": "8197141318375361",
+      "id": "7624423626411717",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "3254384810041345",
+      "id": "8909957375513263",
       "text": "Integration is always expensive, and sometimes the benefit is small."
     }
 ,    {
       "type": "paragraph",
-      "id": "0444358918318240",
+      "id": "4610552277298990",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "7107159683816108",
-      "text": "Declare a bounded context to have no connection to the others at all, allowing developers to find simple, specialized solutions within this small scope."
+      "id": "4382370255942441",
+      "text": "Declare a [[bounded context]] to have no connection to the others at all, allowing developers to find simple, specialized solutions within this small scope."
     }
 
           ]

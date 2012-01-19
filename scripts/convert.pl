@@ -66,8 +66,34 @@ sub image {
 
 # scan the word generated html picking out content based on well chosen style names
 
-my (%t, %tt);
+my (%t, %tt, %ttt);
 my (@index, @pattern) = ((),());
+
+sub mention {
+  local $_ = my $ref = $1;
+  my %slugs = ("ubiquitous-language"=>1, "model-driven-design"=>1, "hands-on-modelers"=>1, "layered-architecture"=>1, "reference-objects"=>1, "entities"=>1, "value-objects"=>1, "services"=>1, "packages"=>1, "modules"=>1, "aggregates"=>1, "factories"=>1, "repositories"=>1, "intention-revealing-interfaces"=>1, "side-effect-free-functions"=>1, "assertions"=>1, "conceptual-contours"=>1, "standalone-classes"=>1, "closure-of-operations"=>1, "bounded-context"=>1, "continuous-integration"=>1, "context-map"=>1, "shared-kernel"=>1, "customersupplier-development-teams"=>1, "conformist"=>1, "anticorruption-layer"=>1, "separate-ways"=>1, "open-host-service"=>1, "published-language"=>1, "core-domain"=>1, "generic-subdomains"=>1, "domain-vision-statement"=>1, "highlighted-core"=>1, "cohesive-mechanisms"=>1, "segregated-core"=>1, "abstract-core"=>1, "evolving-order"=>1, "system-metaphor"=>1, "responsibility-layers"=>1, "knowledge-level"=>1, "pluggable-component-framework"=>1, "domain-driven-design"=>1);
+  s/^ +//;
+  s/[., ]+$//;
+  s/^Core$/Core domain/;
+  s/^aggregate$/aggregates/;
+  s/^bounded contexts$/bounded context/;
+  s/^closure$/closure of operations/;
+  s/^cohesive mechanism$/cohesive mechanisms/;
+  s/^conformity$/conformist/;
+  s/^context$/context map/;
+  s/^core$/core domain/;
+  s/^domain$/core domain/;
+  s/^entity$/entities/;
+  s/^intention-revealing interface$/intention-revealing interfaces/;
+  s/^layers?$/layered-architecture/;
+  s/^model-driven$/model-driven design/;
+  s/^module$/modules/;
+  s/^service$/services/;
+  s/^value( object)?$/value objects/;
+  $ttt{$_}++ unless $slugs{slug($_)};
+  return "[[$_]]" if $slugs{slug($_)};
+  $ref;
+}
 
 $/ = "\n\n";
 sub scan {
@@ -77,6 +103,7 @@ sub scan {
   my $part = 'Unknown Part';
   for (<H>) {
     s/\n/ /g;
+    s/<span class=PatternMention>(.*?)<\/span>/&mention()/geo;
     s/<span.*<\/p>/* * *<\/p>/ if /PatternSectionBreak/;
     s/<\/?(span|v:|o:|br|a|xml|!).*?>//g;
     map $t{$1}++, /<([a-zA-Z0-9]+)/g;
@@ -119,5 +146,6 @@ sub scan {
 scan();
 print "\n", map "$t{$_}\t$_\n", sort keys %t;
 print "\n", map "$tt{$_}\t$_\n", sort keys %tt;
+print "\n", map "$ttt{$_}\t$_\n", sort keys %ttt;
 
 
