@@ -1,0 +1,53 @@
+{
+  "title": "release-notes",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "0cd11b33fb101c94",
+      "text": "Caution: Don't Edit This Page (yet)."
+    },
+    {
+      "type": "paragraph",
+      "id": "11d67d0b5dd89ff8",
+      "text": "<b>January 10, 2012</b> This wiki has a cool feature that allows you to fork any page by just editing it. You may have already forked the front page of this site. (Forked pages have a yellow cast.) We have mechanisms planed for tracking changes to originating documents but they are not in place on this site. So, I recommend you don't fork this page or you will cut yourself off from ongoing announcements here."
+    }
+  ],
+  "journal": [
+    {
+      "type": "edit",
+      "id": "0cd11b33fb101c94",
+      "item": {
+        "type": "paragraph",
+        "id": "0cd11b33fb101c94",
+        "text": "Caution: Don't Edit This Page."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "11d67d0b5dd89ff8"
+      },
+      "id": "11d67d0b5dd89ff8",
+      "type": "add",
+      "after": "0cd11b33fb101c94"
+    },
+    {
+      "type": "edit",
+      "id": "11d67d0b5dd89ff8",
+      "item": {
+        "type": "paragraph",
+        "id": "11d67d0b5dd89ff8",
+        "text": "<b>January 10, 2012</b> This wiki has a cool feature that allows you to fork any page by just editing it. You may have already forked the front page of this site. (Forked pages have a yellow cast.) We have mechanisms planed for tracking changes to originating documents but they are not in place on this site. So, I recommend you don't fork this page or you will cut yourself off from ongoing announcements here."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "0cd11b33fb101c94",
+      "item": {
+        "type": "paragraph",
+        "id": "0cd11b33fb101c94",
+        "text": "Caution: Don't Edit This Page (yet)."
+      }
+    }
+  ]
+}

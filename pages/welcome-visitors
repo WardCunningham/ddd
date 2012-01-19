@@ -25,6 +25,46 @@
       "type": "paragraph",
       "id": "d25dc1c201ca097f",
       "text": "See [[Original License Details]].\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "25f0d2339b201b06",
+      "text": "<h3>Transcription Methods"
+    },
+    {
+      "type": "paragraph",
+      "id": "6539717269a4e137",
+      "text": "Some of you may know that I built a second pattern repository and that Eric and a few others were very generous in excerpting their published works."
+    },
+    {
+      "type": "paragraph",
+      "id": "5ba8008b35dbb76b",
+      "text": "This site was built by reprocessing Eric's well crafted Word document, first into html, and from that into the JSON used by this site."
+    },
+    {
+      "type": "paragraph",
+      "id": "0541d4efc0cbe399",
+      "text": "See my [https://github.com/WardCunningham/ddd github project] for programming details."
+    },
+    {
+      "type": "paragraph",
+      "id": "d5c7fae6b4749bcf",
+      "text": "<h3>Experimental Software"
+    },
+    {
+      "type": "paragraph",
+      "id": "d683b47383e7e8e3",
+      "text": "Warning: This software is hosted on an experimental wiki. Although the wiki has been designed with a mobile-friendly form factor, all testing has been with recent releases of desktop browsers, specifically Chrome and Firefox."
+    },
+    {
+      "type": "paragraph",
+      "id": "62cb3ceb47dcef8c",
+      "text": "That said, I would be willing to work with DDD experts that would like to elaborate on Eric's work in this new medium. If you want a sense of what that could be like, try dragging or double-clicking the text in front of you."
+    },
+    {
+      "type": "paragraph",
+      "id": "351845451342aca8",
+      "text": "See also [[Release Notes]]."
     }
   ],
   "journal": [
@@ -220,6 +260,213 @@
         "type": "paragraph",
         "id": "b45e5d9b9e1deba6",
         "text": "This site has been populated with extracts from <i>Domain-Driven Design: Tackling Complexity in the Heart of Software</i>, by Eric Evans, Addison-Wesley 2004."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "25f0d2339b201b06"
+      },
+      "id": "25f0d2339b201b06",
+      "type": "add",
+      "after": "d25dc1c201ca097f"
+    },
+    {
+      "type": "edit",
+      "id": "25f0d2339b201b06",
+      "item": {
+        "type": "paragraph",
+        "id": "25f0d2339b201b06",
+        "text": "<h3>Transcription Methods"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6539717269a4e137"
+      },
+      "id": "6539717269a4e137",
+      "type": "add",
+      "after": "25f0d2339b201b06"
+    },
+    {
+      "type": "edit",
+      "id": "6539717269a4e137",
+      "item": {
+        "type": "paragraph",
+        "id": "6539717269a4e137",
+        "text": "Some of you may know that I built a second pattern repository and that Eric and a few others were very generous in excerpting "
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5ba8008b35dbb76b"
+      },
+      "id": "5ba8008b35dbb76b",
+      "type": "add",
+      "after": "6539717269a4e137"
+    },
+    {
+      "type": "edit",
+      "id": "5ba8008b35dbb76b",
+      "item": {
+        "type": "paragraph",
+        "id": "5ba8008b35dbb76b",
+        "text": "This site was built by reprocessing Eric's well crafted Word document, first into html, and from that into the JSON used by this site."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "6539717269a4e137",
+      "item": {
+        "type": "paragraph",
+        "id": "6539717269a4e137",
+        "text": "Some of you may know that I built a second pattern repository and that Eric and a few others were very generous in excerpting their published works."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0541d4efc0cbe399"
+      },
+      "id": "0541d4efc0cbe399",
+      "type": "add",
+      "after": "5ba8008b35dbb76b"
+    },
+    {
+      "type": "edit",
+      "id": "0541d4efc0cbe399",
+      "item": {
+        "type": "paragraph",
+        "id": "0541d4efc0cbe399",
+        "text": "See my [[github.com:WardCunningham/ddd github project]] for programming details."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "0541d4efc0cbe399",
+      "item": {
+        "type": "paragraph",
+        "id": "0541d4efc0cbe399",
+        "text": "See my [http://github.com:WardCunningham/ddd github project] for programming details."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "0541d4efc0cbe399",
+      "item": {
+        "type": "paragraph",
+        "id": "0541d4efc0cbe399",
+        "text": "See my [https://github.com/WardCunningham/ddd github project] for programming details."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d5c7fae6b4749bcf"
+      },
+      "id": "d5c7fae6b4749bcf",
+      "type": "add",
+      "after": "0541d4efc0cbe399"
+    },
+    {
+      "type": "edit",
+      "id": "d5c7fae6b4749bcf",
+      "item": {
+        "type": "paragraph",
+        "id": "d5c7fae6b4749bcf",
+        "text": "<h2>Experimental Software"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "d5c7fae6b4749bcf",
+      "item": {
+        "type": "paragraph",
+        "id": "d5c7fae6b4749bcf",
+        "text": "<h3>Experimental Software"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d683b47383e7e8e3"
+      },
+      "id": "d683b47383e7e8e3",
+      "type": "add",
+      "after": "d5c7fae6b4749bcf"
+    },
+    {
+      "type": "edit",
+      "id": "d683b47383e7e8e3",
+      "item": {
+        "type": "paragraph",
+        "id": "d683b47383e7e8e3",
+        "text": "Warning: This software is hosted on an experimental wiki. Although the wiki has been designed with a mobile-friendly form factor, all testing has been with recent releases of desktop browsers, specifically Chrome and Firefox."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "62cb3ceb47dcef8c"
+      },
+      "id": "62cb3ceb47dcef8c",
+      "type": "add",
+      "after": "d683b47383e7e8e3"
+    },
+    {
+      "type": "edit",
+      "id": "62cb3ceb47dcef8c",
+      "item": {
+        "type": "paragraph",
+        "id": "62cb3ceb47dcef8c",
+        "text": "That said, I would be willing to work with DDD experts that would like to elaborate on Eric's work in this new medium."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "62cb3ceb47dcef8c",
+      "item": {
+        "type": "paragraph",
+        "id": "62cb3ceb47dcef8c",
+        "text": "That said, I would be willing to work with DDD experts that would like to elaborate on Eric's work in this new medium. If you want a sense of what that could be like, try dragging or double-clicking the text in front of you."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "62cb3ceb47dcef8c",
+      "item": {
+        "type": "paragraph",
+        "id": "62cb3ceb47dcef8c",
+        "text": "That said, I would be willing to work with DDD experts that would like to elaborate on Eric's work in this new medium. If you want a sense of what that could be like, try dragging or double-clicking the text in front of you. See also [[Release Notes]]."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "62cb3ceb47dcef8c",
+      "item": {
+        "type": "paragraph",
+        "id": "62cb3ceb47dcef8c",
+        "text": "That said, I would be willing to work with DDD experts that would like to elaborate on Eric's work in this new medium. If you want a sense of what that could be like, try dragging or double-clicking the text in front of you."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "351845451342aca8"
+      },
+      "id": "351845451342aca8",
+      "type": "add",
+      "after": "62cb3ceb47dcef8c"
+    },
+    {
+      "type": "edit",
+      "id": "351845451342aca8",
+      "item": {
+        "type": "paragraph",
+        "id": "351845451342aca8",
+        "text": "See also [[Release Notes]]."
       }
     }
   ],

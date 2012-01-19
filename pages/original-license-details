@@ -29,7 +29,7 @@
     {
       "type": "paragraph",
       "id": "5b6e3c2e2b2ae8fe",
-      "text": "\nFor any reuse or distribution, you must make clear to others the license terms of this work. Any of these conditions can be waived if you get permission from the copyright holder. For the full text of the license, see the following web sites: \n\n[http://creativecommons.org/licenses/by/2.0/ License] or \n[http://creativecommons.org/licenses/by/2.0/legalcode  legal code].\n"
+      "text": "For any reuse or distribution, you must make clear to others the license terms of this work. Any of these conditions can be waived if you get permission from the copyright holder. For the full text of the license, see the following web sites: \n\n[http://creativecommons.org/licenses/by/2.0/ License] or \n[http://creativecommons.org/licenses/by/2.0/legalcode  Legal Code].\n"
     }
   ],
   "journal": [
@@ -153,6 +153,15 @@
         "type": "paragraph",
         "id": "d0b76b491a9d8f72",
         "text": "That document was distributed under the Creative Commons Deed: Attribution 2.0. "
+      }
+    },
+    {
+      "type": "edit",
+      "id": "5b6e3c2e2b2ae8fe",
+      "item": {
+        "type": "paragraph",
+        "id": "5b6e3c2e2b2ae8fe",
+        "text": "For any reuse or distribution, you must make clear to others the license terms of this work. Any of these conditions can be waived if you get permission from the copyright holder. For the full text of the license, see the following web sites: \n\n[http://creativecommons.org/licenses/by/2.0/ License] or \n[http://creativecommons.org/licenses/by/2.0/legalcode  Legal Code].\n"
       }
     }
   ]
