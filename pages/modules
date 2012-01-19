@@ -3,28 +3,28 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "5309577581302310",
-      "text": "Everyone uses modules, but few treat them as a full-fledged part of the model. Code gets broken down into all sorts of categories, from aspects of the technical architecture to developers' work assignments. Even developers who refactor a lot tend to content themselves with modules conceived early in the project."
+      "id": "6687569490102101",
+      "text": "Everyone uses [[modules]], but few treat them as a full-fledged part of the model. Code gets broken down into all sorts of categories, from aspects of the technical architecture to developers' work assignments. Even developers who refactor a lot tend to content themselves with [[modules]] conceived early in the project."
     }
 ,    {
       "type": "paragraph",
-      "id": "5102248618994423",
-      "text": "It is a truism that there should be low coupling between modules and high cohesion within them. Explanations of coupling and cohesion tend to make them sound like technical metrics, to be judged mechanically based on the distributions of associations and interactions. Yet it isn't just code being divided into modules, but concepts. There is a limit to how many things a person can think about at once (hence low coupling). Incoherent fragments of ideas are as hard to understand as an undifferentiated soup of ideas (hence high cohesion)."
+      "id": "7992645286207894",
+      "text": "It is a truism that there should be low coupling between [[modules]] and high cohesion within them. Explanations of coupling and cohesion tend to make them sound like technical metrics, to be judged mechanically based on the distributions of associations and interactions. Yet it isn't just code being divided into [[modules]], but concepts. There is a limit to how many things a person can think about at once (hence low coupling). Incoherent fragments of ideas are as hard to understand as an undifferentiated soup of ideas (hence high cohesion)."
     }
 ,    {
       "type": "paragraph",
-      "id": "3337209102449023",
+      "id": "0653315757356279",
       "text": "Therefore,"
     }
 ,    {
       "type": "paragraph",
-      "id": "7365851438455165",
-      "text": "Choose modules that tell the story of the system and contain a cohesive set of concepts. This often yields low coupling between modules, but if it doesn't look for a way to change the model to disentangle the concepts, or an overlooked concept that might be the basis of a module that would bring the elements together in a meaningful way. Seek low coupling in the sense of concepts that can be understood and reasoned about independently of each other. Refine the model until it partitions according to high-level domain concepts and the corresponding code is decoupled as well."
+      "id": "5253825596907681",
+      "text": "Choose [[modules]] that tell the story of the system and contain a cohesive set of concepts. This often yields low coupling between modules, but if it doesn't look for a way to change the model to disentangle the concepts, or an overlooked concept that might be the basis of a [[modules]] that would bring the elements together in a meaningful way. Seek low coupling in the sense of concepts that can be understood and reasoned about independently of each other. Refine the model until it partitions according to high-level domain concepts and the corresponding code is decoupled as well."
     }
 ,    {
       "type": "paragraph",
-      "id": "5501399923996316",
-      "text": "Give the modules names that become part of the ubiquitous language. modules and their names should reflect insight into the domain."
+      "id": "3158566989550762",
+      "text": "Give the [[modules]] names that become part of the [[ubiquitous language]].[[modules]] and their names should reflect insight into the domain."
     }
 
           ]

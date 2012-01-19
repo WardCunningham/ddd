@@ -3,27 +3,27 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "7406953293873965",
+      "id": "1750240811455782",
       "text": "Design free-for-alls produce systems no one can make sense of as a whole, and they are very difficult to maintain. But architectures can straitjacket a project with up-front design assumptions and take too much power away from the developers/designers of particular parts of the application. Soon, developers will dumb down the application to fit the structure, or they will subvert it and have no structure at all, bringing back the problems of uncoordinated development."
     }
 ,    {
       "type": "paragraph",
-      "id": "5927031157508870",
+      "id": "0041421523744460",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "6623281968240110",
+      "id": "0531413883891199",
       "text": "Let this conceptual large-scale structure evolve with the application, possibly changing to a completely different type of structure along the way. Don't over constrain the detailed design and model decisions that must be made with detailed knowledge."
     }
 ,    {
       "type": "paragraph",
-      "id": "5583150565828945",
+      "id": "9304363920267680",
       "text": "Large-scale structure should be applied when a structure can be found that greatly clarifies the system without forcing unnatural constraints on model development. Because an ill-fitting structure is worse than none, it is best not to shoot for comprehensiveness, but rather to find a minimal set that solves the problems that have emerged. Less is more."
     }
 ,    {
       "type": "paragraph",
-      "id": "1752291370673583",
+      "id": "4015367675048371",
       "text": "What follows is a set of four particular patterns of large-scale structure that emerge on some projects and are representative of this kind of pattern."
     }
 

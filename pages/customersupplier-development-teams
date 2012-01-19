@@ -3,32 +3,32 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "5302333957774789",
+      "id": "2907483842628045",
       "text": "Functionality is often partitioned such that one subsystem essentially feeds another; the second performs analysis or other functions that feed back very little into the first. In such cases, the two subsystems commonly serve very different user communities, with different jobs, where different models may be useful. The tool set may also be different, meaning that program code cannot be shared."
     }
 ,    {
       "type": "paragraph",
-      "id": "4187240068774082",
+      "id": "5813207580193928",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "7827433210494254",
+      "id": "8174482855856347",
       "text": "The freewheeling development of the upstream team can be cramped if the downstream team has veto power over changes, or if procedures for requesting changes are too cumbersome. The upstream team may even be inhibited, worried about breaking the downstream system. Meanwhile, the downstream team can be helpless, at the mercy of upstream priorities."
     }
 ,    {
       "type": "paragraph",
-      "id": "8178217659967517",
+      "id": "0638698429778221",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "9193017972423116",
+      "id": "9064606975518571",
       "text": "Establish a clear customer/supplier relationship between the two teams. In planning sessions, make the downstream team play the customer role to the upstream team. Negotiate and budget tasks for downstream requirements so that everyone understands the commitment and schedule."
     }
 ,    {
       "type": "paragraph",
-      "id": "3677512307965670",
+      "id": "1457100777033281",
       "text": "Jointly develop automated acceptance tests that will validate the interface expected. Add these tests to the upstream team's test suite, to be run as part of its continuous integration. This testing will free the upstream team to make changes without fear of side effects downstream."
     }
 

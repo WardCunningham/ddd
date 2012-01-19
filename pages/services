@@ -3,23 +3,23 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "1800750113412054",
+      "id": "4052956548605072",
       "text": "Sometimes, it just isn't a thing."
     }
 ,    {
       "type": "paragraph",
-      "id": "8836551094346359",
-      "text": "Some concepts from the domain aren't natural to model as objects. Forcing the required domain functionality to be the responsibility of an entity or value either distorts the definition of a model-based object or adds meaningless artificial objects."
+      "id": "2485222663963158",
+      "text": "Some concepts from the domain aren't natural to model as objects. Forcing the required domain functionality to be the responsibility of an [[entities]] or [[value objects]] either distorts the definition of a model-based object or adds meaningless artificial objects."
     }
 ,    {
       "type": "paragraph",
-      "id": "0137712222527487",
+      "id": "0795752349881019",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "6989496148657356",
-      "text": "When a significant process or transformation in the domain is not a natural responsibility of an entity or value object, add an operation to the model as a standalone interface declared as a service. Define the interface in terms of the language of the model and make sure the operation name is part of the ubiquitous language. Make the service stateless."
+      "id": "7731929572138700",
+      "text": "When a significant process or transformation in the domain is not a natural responsibility of an [[entities]] or [[value objects]], add an operation to the model as a standalone interface declared as a [[services]]. Define the interface in terms of the language of the model and make sure the operation name is part of the [[ubiquitous language]]. Make the [[services]] stateless."
     }
 
           ]

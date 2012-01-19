@@ -3,39 +3,39 @@
           "story": [
                 {
       "type": "image",
-      "id": "1335113694891477",
+      "id": "8050152006026673",
       "url": "data:image/gif;base64,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",
       "caption": "files/image014.gif"
     }
 ,    {
       "type": "paragraph",
-      "id": "2418264213708273",
-      "text": "When functional integration is limited, the overhead of continuous integration may be deemed too high. This may especially be true when the teams do not have the skill or the political organization to maintain continuous integration, or when a single team is simply too big and unwieldy. So separate bounded contexts might be defined and multiple teams formed."
+      "id": "4709647732121745",
+      "text": "When functional integration is limited, the overhead of [[continuous integration]] may be deemed too high. This may especially be true when the teams do not have the skill or the political organization to maintain continuous integration, or when a single team is simply too big and unwieldy. So separate [[bounded context]] might be defined and multiple teams formed."
     }
 ,    {
       "type": "paragraph",
-      "id": "8096834012500846",
+      "id": "7089950386501384",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "5745995894682617",
-      "text": "Uncoordinated teams working on closely related applications can go racing forward for a while, but what they produce may not fit together. They can end up spending more on translation layers and retrofitting than they would have on continuous integration in the first place, meanwhile duplicating effort and losing the benefits of a common ubiquitous language."
+      "id": "7786561101573823",
+      "text": "Uncoordinated teams working on closely related applications can go racing forward for a while, but what they produce may not fit together. They can end up spending more on translation layers and retrofitting than they would have on [[continuous integration]] in the first place, meanwhile duplicating effort and losing the benefits of a common [[ubiquitous language]]."
     }
 ,    {
       "type": "paragraph",
-      "id": "7940388109692577",
+      "id": "9049756172948251",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "1289980272400342",
+      "id": "0563398534074400",
       "text": "Designate some subset of the domain model that the two teams agree to share. Of course this includes, along with this subset of the model, the subset of code or of the database design associated with that part of the model. This explicitly shared stuff has special status, and shouldn't be changed without consultation with the other team."
     }
 ,    {
       "type": "paragraph",
-      "id": "4876971014117199",
-      "text": "Integrate a functional system frequently, but somewhat less often than the pace of continuous integration within the teams. At these integrations, run the tests of both teams."
+      "id": "0836625507269609",
+      "text": "Integrate a functional system frequently, but somewhat less often than the pace of [[continuous integration]] within the teams. At these integrations, run the tests of both teams."
     }
 
           ]

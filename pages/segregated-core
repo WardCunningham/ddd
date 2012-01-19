@@ -3,18 +3,18 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "8066716617544498",
-      "text": "Elements in the model may partially serve the core domain and partially play supporting roles. Core elements may be tightly coupled to generic ones. The conceptual cohesion of the core may not be strong or visible. All this clutter and entanglement chokes the core. Designers can't clearly see the most important relationships, leading to a weak design."
+      "id": "3383080954418957",
+      "text": "Elements in the model may partially serve the [[core domain]] [[core domain]]and partially play supporting roles. [[Core domain]] elements may be tightly coupled to generic ones. The conceptual cohesion of the [[core domain]] may not be strong or visible. All this clutter and entanglement chokes the [[core domain]]. Designers can't clearly see the most important relationships, leading to a weak design."
     }
 ,    {
       "type": "paragraph",
-      "id": "3643491429895935",
+      "id": "6436948229380811",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "0421005002162350",
-      "text": "Refactor the model to separate the core concepts from supporting players (including ill-defined ones) and strengthen the cohesion of the core while reducing its coupling to other code. Factor all generic or supporting elements into other objects and place them into other packages, even if this means refactoring the model in ways that separate highly coupled elements."
+      "id": "4158064554893027",
+      "text": "Refactor the model to separate the [[core domain]] concepts from supporting players (including ill-defined ones) and strengthen the cohesion of the [[core domain]] while reducing its coupling to other code. Factor all generic or supporting elements into other objects and place them into other packages, even if this means refactoring the model in ways that separate highly coupled elements."
     }
 
           ]

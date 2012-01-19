@@ -3,28 +3,28 @@
           "story": [
                 {
       "type": "paragraph",
-      "id": "6798871729346691",
-      "text": "Typically for each bounded context, you will define a translation layer for each component with which you have to integrate that is outside the context. Where integration is one-off, this approach of inserting a translation layer for each external system avoids corruption of the models with a minimum of cost. But when you find your subsystem in high demand, you may need a more flexible approach."
+      "id": "0571581508074087",
+      "text": "Typically for each [[bounded context]] you will define a translation layer for each component with which you have to integrate that is outside the [[context map]]. Where integration is one-off, this approach of inserting a translation layer for each external system avoids corruption of the models with a minimum of cost. But when you find your subsystem in high demand, you may need a more flexible approach."
     }
 ,    {
       "type": "paragraph",
-      "id": "9058630978579575",
+      "id": "2739552768095886",
       "text": "* * *"
     }
 ,    {
       "type": "paragraph",
-      "id": "3972501080289968",
+      "id": "9093076821875442",
       "text": "When a subsystem has to be integrated with many others, customizing a translator for each can bog down the team. There is more and more to maintain, and more and more to worry about when changes are made."
     }
 ,    {
       "type": "paragraph",
-      "id": "4180258391691786",
+      "id": "1720802856580401",
       "text": "Therefore:"
     }
 ,    {
       "type": "paragraph",
-      "id": "0639249007676297",
-      "text": "Define a protocol that gives access to your subsystem as a set of services. Open the protocol so that all who need to integrate with you can use it. Enhance and expand the protocol to handle new integration requirements, except when a single team has idiosyncratic needs. Then, use a one-off translator to augment the protocol for that special case so that the shared protocol can stay simple and coherent."
+      "id": "0326101468792763",
+      "text": "Define a protocol that gives access to your subsystem as a set of [[services]]. Open the protocol so that all who need to integrate with you can use it. Enhance and expand the protocol to handle new integration requirements, except when a single team has idiosyncratic needs. Then, use a one-off translator to augment the protocol for that special case so that the shared protocol can stay simple and coherent."
     }
 
           ]
